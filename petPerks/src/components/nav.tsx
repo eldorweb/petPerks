@@ -1,7 +1,19 @@
+import { Link } from "react-router"
+import { NavStyle } from "../style/navStyle"
 
 const Nav = () => {
     return (
-    <div>Nav</div>
+    <NavStyle>
+    <div className="container">
+        <Link to={"/about"}>
+        <p>home</p>
+        </Link>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+        <p>home</p>
+    </div>
+    </NavStyle>
     )
 }
 
