@@ -8,5 +8,5 @@ export const HomeStyle = styled.div`
     padding-right: 150px;
     padding-left: 150px;
     width: 100%;
-    background-color: red;
+    padding-bottom: 1000px;
 `

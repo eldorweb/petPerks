@@ -2,15 +2,15 @@
 
 @font-face {
   font-family: lufga500;
-  src: url(./lufgaFont/Fontspring-DEMO-lufga-medium.otf);
+  src: url(./lufgaFont/LufgaMedium.ttf);
 }
 @font-face {
   font-family: lufga400;
-  src: url(./lufgaFont/Fontspring-DEMO-lufga-regular.otf);
+  src: url(./lufgaFont/LufgaRegular.ttf);
 }
 @font-face {
   font-family: lufga600;
-  src: url(./lufgaFont/Fontspring-DEMO-lufga-semibold.otf);
+  src: url(./lufgaFont/LufgaSemiBold.ttf);
 }
 
 *{
@@ -45,3 +45,29 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* _____________________ */
+.bgimg::before{
+  content: '';
+  background-image: url(../src/assets/png/footer/footerBg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 205px;
+  height: 307px;
+  position: absolute;
+  transform: translate(-400px, 200px);
+}
+.last::before{
+  content: '';
+  background-image: url(../src/assets/png/footer/footerbgright.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 234px;
+  height: 464px;
+  position: absolute;
+  right: 0;
+  transform: translateY(-100px);
+}
+
+
+/* _____________________ */
