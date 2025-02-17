@@ -57,7 +57,7 @@ body {
   width: 205px;
   height: 307px;
   position: absolute;
-  transform: translate(-220px, 140px);
+  transform: translate(-320px, 140px);
 }
 .last::before{
   content: '';
@@ -70,9 +70,21 @@ body {
   right: 0;
   transform: translate(100px, -100px);
 }
-.inputArrow::after{
-  content: '';
-  
+
+.header_right_bgimg{
+  background-image: url(../src/assets/png/home/dogFace.jpg);
+  background-position: center;
+  background-size: 70px 90px;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-blend-mode: unset;
+}
+.right_2{
+  background-image: url(./assets/svg/home/zline.svg);
+  background-repeat: no-repeat;
+  background-size: 800px 700px;
+  z-index: 100;
+
 }
 
 /* _____________________ */

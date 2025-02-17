@@ -10,13 +10,12 @@ export const FooterStyle = styled.div`
     padding-bottom: 20px;
     flex-direction: column;
     background-color: #FDDAD3;
-    padding-right:0;
     padding-left: 100px;
     width: 100%;
     .footerTop{
         display: flex;
         .footerFirst{
-            margin-right: 15px;
+            margin-right: 45px;
             margin-bottom: 89px;
             .first_address{
                 color: #000;
@@ -49,7 +48,7 @@ export const FooterStyle = styled.div`
         .footerSecond{
             gap: 10px;
             padding-top: 25px;
-            margin-right: 40px;
+            margin-right: 80px;
             img{
                 width: 60px;
                 height: 60px;
@@ -80,7 +79,7 @@ export const FooterStyle = styled.div`
             }
         }
         .footerThird:not(:last-child){
-            margin-right: 40px;
+            margin-right: 80px;
         }
         .footerThird{
             h2{
