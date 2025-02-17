@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="first_subscribe">
             <p>subscribe to our newsletter</p>
-            <input type="text" placeholder="Your Email Address" />
+            <input type="text" placeholder="Your Email Address"  className="inputArrow"/>
         </div>
         </div>
 

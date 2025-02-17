@@ -9,6 +9,7 @@ import PortfolioMain from "../allPages/portfolio/main"
 import PagesMain from "../allPages/pages/main"
 import LoginMain from "../auth/login"
 import RegisterMain from "../auth/register"
+import Page404 from "../add/404page"
 
 
 const Router = () => {
@@ -24,6 +25,7 @@ const Router = () => {
         <Route path='/pages' element ={<PagesMain />} />
         <Route path='/login' element ={<LoginMain />} />
         <Route path='/register' element ={<RegisterMain />} />
+        <Route path='*' element={<Page404/>} />
         </Routes>
         <Footer/>
 
