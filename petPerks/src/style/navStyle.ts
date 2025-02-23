@@ -7,6 +7,11 @@ export const NavStyle = styled.div`
     font-family: lufga600;
     font-size: 20px;
     display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 80px;
+    padding-left: 80px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);

@@ -1,7 +1,7 @@
 
 const AboutMain = () => {
     return (
-    <div>AboutMain</div>
+    <div >AboutMain</div>
     )
 }
 

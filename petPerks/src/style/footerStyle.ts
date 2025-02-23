@@ -6,6 +6,11 @@ export const FooterStyle = styled.div`
     font-family: lufga400;
     font-size: 20px;
     display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 80px;
+    padding-left: 80px;
     padding-top: 84px;
     padding-bottom: 20px;
     flex-direction: column;

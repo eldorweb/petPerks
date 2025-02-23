@@ -1,15 +1,11 @@
 import { NavLink, NavStyle } from "../style/navStyle"
 import logo from '../assets/svg/nav/logo.svg'
-import search from '../assets/svg/nav/navSearch.svg'
-import heart from '../assets/svg/nav/navHeart.svg'
 import burger from '../assets/svg/nav/navBurger.svg'
-import shopCart from '../assets/svg/nav/navShoppingCart.svg'
+
 
 const Nav = () => {
     return (
     <NavStyle>
-    <div className="container">
-
         <div className="logo_div">
             <img src={logo} alt="logo" className="logo"/>
             <h2 className="logo_title">PetPerks</h2>
@@ -79,7 +75,6 @@ const Nav = () => {
             </div>
             <img src={burger} alt="nav_burger" className="nav_burger" id="nav_burger" />
         </div>
-    </div>
     </NavStyle>
     )
 }

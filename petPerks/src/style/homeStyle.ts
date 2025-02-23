@@ -162,10 +162,58 @@ export const HomeStyle = styled.div`
 
 export const CategoryStyle = styled.div`
 display: flex;
-align-items: center;
-justify-content: center;
-margin-right: auto;
-margin-left: auto;
-width: 100%;
+flex-direction: column;
 background: #FFFBFA;
+padding:100px 300px;
+
+h2{
+color: #000;
+font-family: Lufga600;
+font-size: 40px;
+line-height: 35px;
+text-transform: capitalize;
+margin-bottom: 36px;
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    .d1{
+        background: #FFDDD6;
+    }
+    .d2{
+        background: #FFE7C2;
+    }
+    .d3{
+        background: #D8F3E5;
+    }
+    .d4{
+        background: #DEF7FF;
+    }
+    .d5{
+        background: #EFE9FF;
+    }
+    div{
+        width: 234px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 15px 15px 0px 15px;
+        height: 200px;
+        p{
+            color: #000;
+            text-align: center;
+            font-family: Lufga500;
+            font-size: 20px;
+            line-height: 35px;
+            text-transform: capitalize;
+        }
+        img{
+            width: 200px;
+            height: 170px;
+        }
+    }
+}
 `
