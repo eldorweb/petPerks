@@ -14,7 +14,7 @@ import Page404 from "../add/404page"
 
 const Router = () => {
     return (
-        <>
+        <div style={{maxWidth:"1920px", marginInline:"auto"}}>
         <Nav/>
         <Routes>
         <Route path='/' element ={<HomeMain />} />
@@ -29,7 +29,7 @@ const Router = () => {
         </Routes>
         <Footer/>
 
-        </>
+        </div>
     )
 }
 

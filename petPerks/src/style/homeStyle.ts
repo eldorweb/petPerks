@@ -7,11 +7,13 @@ export const HomeStyle = styled.div`
     margin-left: auto;
     width: 100%; 
     padding-left: 30px;
-    padding-right: 76px;
+    padding-right: 66px;
     padding-top: 40px;
     padding-bottom: 40px;
     .header{
-        display: flex;
+        .forBgimg{
+            display: flex;
+        }
         .header_left{
             display: flex;
             flex-direction: column;
@@ -46,7 +48,6 @@ export const HomeStyle = styled.div`
         }
         .header_right{
             display: flex;
-            width: 60%;
             .right_1{
                 display: flex;
                 flex-direction: column;
@@ -151,42 +152,20 @@ export const HomeStyle = styled.div`
                 }
             }
             .right_2{
-                margin-left: 400px;
+                margin-left: 30px;
                 height: 100%;
-                .img1{
-                    width: 663px;
-                    z-index: 1;
-
-                }
-                .img2{
-                    position: absolute;
-                    top: 300px;
-                    right: 700px;
-                    z-index: -1;
-                }
-                .img2 path{
-                    width: 141px;
-                    height: 141px;
-                }
-                .img3{
-                    position: absolute;
-                    top: 100px;
-                    right: 200px;
-                    z-index: -2;
-                }
-                .img3 path{
-                    width: 85px;
-                    height: 85px;
-
-                }
-                .img4{
-                    position: absolute;
-                    top: 0;
-                    z-index: -3;
-                    top: 250px;
-                    right: 300px;
-                }
+                margin-top: 50px;
             }
         }
     }
+`
+
+export const CategoryStyle = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: auto;
+margin-left: auto;
+width: 100%;
+background: #FFFBFA;
 `
