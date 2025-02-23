@@ -68,3 +68,10 @@ body {
 
 
 /* _____________________ */
+
+.service.active{
+  color: #FE8F90;
+}
+.service.active svg path{
+  fill: #FE8F90;
+}
