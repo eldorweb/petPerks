@@ -58,31 +58,31 @@ const Category = () => {
             >
                 <div className="d1">
                     <p>Dogs</p>
-                    <img src={cdog} alt="dogs" />
+                    <img src={cdog} draggable={false} alt="dogs" />
                 </div>
                 <div className="d2">
                     <p>Cats</p>
-                    <img src={ccat} alt="dogs" />
+                    <img src={ccat} draggable={false} alt="dogs" />
                 </div>
                 <div className="d3">
                     <p>Rabbits</p>
-                    <img src={crabbits} alt="dogs" />
+                    <img src={crabbits} draggable={false} alt="dogs" />
                 </div>
                 <div className="d4">
                     <p>Parrot</p>
-                    <img src={cparrot} alt="dogs" />
+                    <img src={cparrot} draggable={false} alt="dogs" />
                 </div>
                 <div className="d5">
                     <p>Hamster</p>
-                    <img src={chamster} alt="dogs" />
+                    <img src={chamster} draggable={false} alt="dogs" />
                 </div>
                 <div className="d1">
                     <p>Dogs</p>
-                    <img src={cdog} alt="dogs" />
+                    <img src={cdog} draggable={false} alt="dogs" />
                 </div>
                 <div className="d2">
                     <p>Cats</p>
-                    <img src={ccat} alt="dogs" />
+                    <img src={ccat} draggable={false} alt="dogs" />
                 </div>
             </Carousel>
         </CategoryStyle>

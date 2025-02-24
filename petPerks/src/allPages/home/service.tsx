@@ -7,10 +7,10 @@ import Walking from "./serviceComp/walking";
 
 
 const Service = () => {
-    const [select, setSelect] = useState("PetGroomig")
-
-    const handleSelect = (category) => {
-        setSelect(category);
+    const [select, setSelect] = useState("petGroomig")
+    
+    const handleSelect = (value) => {
+        setSelect(value);
     }
 
     let service = document.querySelectorAll('.service');
@@ -26,7 +26,7 @@ const Service = () => {
     return (
         <div className="mr-auto ml-auto flex items-center p-[100px] pr-[300px] pl-[300px]">
 
-            <div className="flex flex-col items-start ">
+            <div className="flex flex-col items-start mr-[50px]">
                 <h2 className="w-[363px] text-black text-[55px] capitalize font-bold mb-[40px]">Our pet care services</h2>
                 <div className="flex flex-col gap-[40px] w-[390px]">
 
