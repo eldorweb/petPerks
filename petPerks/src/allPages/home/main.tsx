@@ -3,6 +3,7 @@ import HomeHeader from "./header"
 import Category from "./category"
 import Service from "./service"
 import Logo from "./logo"
+import Galery from "./galery"
 
 const HomeMain = () => {
     return (
@@ -11,6 +12,7 @@ const HomeMain = () => {
             <Category/>
             <Service/>
             <Logo/>
+            <Galery/>
         </StrictMode>
     )
 }

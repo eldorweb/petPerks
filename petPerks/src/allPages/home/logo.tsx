@@ -9,13 +9,13 @@ import logoipsum7 from '../../assets/svg/home/logoipsum7.svg'
 const Logo = () => {
     return (
         <div className="flex py-[64px] px-[106px] bg-[#FFFBFA] items-center justify-between">
-            <a href="#"><img src={logoipsum1} alt="logo" /></a>
-            <a href="#"><img src={logoipsum2} alt="logo" /></a>
-            <a href="#"><img src={logoipsum3} alt="logo" /></a>
-            <a href="#"><img src={logoipsum4} alt="logo" /></a>
-            <a href="#"><img src={logoipsum5} alt="logo" /></a>
-            <a href="#"><img src={logoipsum6} alt="logo" /></a>
-            <a href="#"><img src={logoipsum7} alt="logo" /></a>
+            <a href=""><img src={logoipsum1} alt="logo" /></a>
+            <a href=""><img src={logoipsum2} alt="logo" /></a>
+            <a href=""><img src={logoipsum3} alt="logo" /></a>
+            <a href=""><img src={logoipsum4} alt="logo" /></a>
+            <a href=""><img src={logoipsum5} alt="logo" /></a>
+            <a href=""><img src={logoipsum6} alt="logo" /></a>
+            <a href=""><img src={logoipsum7} alt="logo" /></a>
         </div>
     )
 }

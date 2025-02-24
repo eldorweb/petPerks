@@ -1,7 +1,6 @@
 import groom from '../../../assets/png/home/grooming.svg'
 import paw from '../../../assets/svg/home/paws.svg'
 import dogGrooming from '../../../assets/png/home/dogGrooming.jpg'
-import "cloudinary-video-player/cld-video-player.min.css";
 import dogMp4 from '../../../assets/dogGrooming.mp4'
 import bigStar from '../../../assets/svg/home/BigStar.svg'
 
