@@ -1,0 +1,13 @@
+<div className='flex flex-col items-start'>
+                        <h2 className="w-[430px] text-[#000] font-[lufga600] text-[55px] mb-[30px] text-start">What pet lovers say about us?</h2>
+                        <p className="mb-[30px] text-[#24262B] text-[20px] text-start w-[556px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                        <div className="flex items-center w-[50%]">
+                            <div className="w-[20%] mr-[20px]">
+                                <img src={lover1} alt="lover1" className="w-[20%] h-[80px] rounded-[80px]" />
+                            </div>
+                            <div className="flex flex-col">
+                                <h4 className="text-[#000] text-[22px] font-[lufga600] mb-[5px]">Kenneth Fong</h4>
+                                <p className="text-[#00000099] text-[14px]">Postgraduate Student</p>
+                            </div>
+                        </div>
+                    </div>

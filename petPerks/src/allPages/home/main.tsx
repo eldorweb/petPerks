@@ -5,6 +5,7 @@ import Service from "./service"
 import Logo from "./logo"
 import Galery from "./galery"
 import PetFoods from "./petFoods"
+import PetLovers from "./petLovers"
 
 const HomeMain = () => {
     return (
@@ -15,6 +16,7 @@ const HomeMain = () => {
             <Logo/>
             <PetFoods />
             <Galery/>
+            <PetLovers/>
         </StrictMode>
     )
 }
