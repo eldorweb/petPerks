@@ -10,6 +10,7 @@ import PagesMain from "../allPages/pages/main"
 import LoginMain from "../auth/login"
 import RegisterMain from "../auth/register"
 import Page404 from "../add/404page"
+import PetFoodsDetail from "./petFoodsDetail"
 
 
 const Router = () => {
@@ -18,6 +19,7 @@ const Router = () => {
         <Nav/>
         <Routes>
         <Route path='/' element ={<HomeMain />} />
+        <Route path='/petFood/:id' element ={<PetFoodsDetail />} />
         <Route path='/about' element ={<AboutMain />} />
         <Route path='/shop' element ={<ShopMain />} />
         <Route path='/blog' element ={<BlogMain />} />

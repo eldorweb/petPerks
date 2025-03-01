@@ -27,7 +27,7 @@ const Service = () => {
         <div className="mr-auto ml-auto flex items-center p-[100px] pr-[300px] pl-[300px]">
 
             <div className="flex flex-col items-start mr-[50px]">
-                <h2 className="w-[363px] text-black text-[55px] capitalize font-bold mb-[40px]">Our pet care services</h2>
+                <h2 className="w-[363px] text-black text-[55px] capitalize font-bold mb-[40px] font-[lufga600]">Our pet care services</h2>
                 <div className="flex flex-col gap-[40px] w-[390px]">
 
                     <div className="flex items-center cursor-pointer  service active " onClick={() => handleSelect('petGroomig')}>

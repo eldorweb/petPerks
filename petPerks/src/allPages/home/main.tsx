@@ -13,8 +13,8 @@ const HomeMain = () => {
             <Category/>
             <Service/>
             <Logo/>
-            <Galery/>
             <PetFoods />
+            <Galery/>
         </StrictMode>
     )
 }

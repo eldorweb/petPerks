@@ -75,3 +75,20 @@ body {
 .service.active svg path{
   fill: #FE8F90;
 }
+.food.active{
+  background-color: #000;
+  color: #FFFBFA;
+}
+
+.petfoods:hover .hoverCart{
+  opacity: 1;
+}
+.petfoods:hover .hoverCart div{
+  margin-bottom: 10px;
+}
+.petfoods:hover .hoverCart div:hover svg path{
+  fill: red;
+}
+.heart_div:hover svg path{
+  fill: red;
+}

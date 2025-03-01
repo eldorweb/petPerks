@@ -1,12 +1,12 @@
-import dogBelt from '../assets/png/home/foods/dogBelt.png'
+
 
 export const FoodMocdata = [
     {
         id: 1,
         type: 'dogsFood',
         menu: {
-            cost: '$ 89',
-            sale: '$ 80',
+            cost: '$89',
+            sale: '$80',
             photo: 'https://img.freepik.com/free-photo/cute-puppy-basenji-dog-posing-green-sweater-isolated-white-background_155003-46024.jpg?w=360',
             title: "Dog Body Belt",
             subtitle:"Pet Item",
@@ -16,9 +16,9 @@ export const FoodMocdata = [
         id: 2,
         type: 'dogsFood',
         menu: {
-            cost: '$ 89',
-            sale: '$ 80',
-            // photo: {dogBelt},
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/dog-leash-isolated-white-close-up_93675-128987.jpg?t=st=1740795772~exp=1740799372~hmac=d2d4f8603fe00566d55264723d08902b9f53ce28d6ba14c2f44b03c0794bf12f&w=1060',
             title: "Dog Cloths",
             subtitle:"Pet Item",
         },
@@ -27,9 +27,9 @@ export const FoodMocdata = [
         id: 3,
         type: 'dogsFood',
         menu: {
-            cost: '$ 89',
-            sale: '$ 80',
-            // photo: {dogBelt},
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/adorable-white-little-puppy_23-2148985891.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
             title: "Pet Bed For Dog",
             subtitle:"Pet Item",
         },
@@ -38,9 +38,9 @@ export const FoodMocdata = [
         id: 4,
         type: 'dogsFood',
         menu: {
-            cost: '$ 89',
-            sale: '$ 80',
-            // photo: {dogBelt},
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/teeth-bone-dog-snack-canine_1203-5909.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
             title: "Dog Chew Toys",
             subtitle:"Pet Item",
         },
@@ -49,9 +49,9 @@ export const FoodMocdata = [
         id: 5,
         type: 'dogsFood',
         menu: {
-            cost: '$ 89',
-            sale: '$ 80',
-            // photo: {dogBelt},
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/dog-chew-bones-isolated-white-background_93675-129001.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
             title: "The Bone Dog Toy",
             subtitle:"Pet Item",
         },
@@ -60,9 +60,9 @@ export const FoodMocdata = [
         id: 6,
         type: 'dogsFood',
         menu: {
-            cost: '$ 89',
-            sale: '$ 80',
-            // photo: {dogBelt},
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/top-view-pet-accessories_23-2150930410.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
             title: "Dog Rope Combo",
             subtitle:"Pet Item",
         },
@@ -71,9 +71,9 @@ export const FoodMocdata = [
         id: 7,
         type: 'dogsFood',
         menu: {
-            cost: '$ 89',
-            sale: '$ 80',
-            // photo: {dogBelt},
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/tennis-ball-minimal-still-life_23-2148849172.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
             title: "Squeaky Ball Dog Toy",
             subtitle:"Pet Item",
         },
@@ -82,10 +82,171 @@ export const FoodMocdata = [
         id: 8,
         type: 'dogsFood',
         menu: {
-            cost: '$ 89',
-            sale: '$ 80',
-            // photo: {dogBelt},
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/top-view-cute-little-dog-relaxing_23-2148460985.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
             title: "Dog Small Pillow",
+            subtitle:"Pet Item",
+        },
+    },
+
+
+    // _______________________________________________________________________________
+    {
+        id: 9,
+        type: 'catsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/still-life-pets-food-assortment_23-2148982371.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
+            title: "Cat Dry Food",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 10,
+        type: 'catsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/top-view-pet-accessories_23-2150930425.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
+            title: "Cat Litter",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 11,
+        type: 'catsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/top-view-pet-accessories_23-2150930408.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
+            title: "Cat Toys",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 12,
+        type: 'catsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/pink-pet-bag-arrangement_23-2148982407.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
+            title: "Cat Carriers",
+            subtitle:"Pet Item",
+        },
+    },
+    //________________________________________________________________________________
+
+    {
+        id: 13,
+        type: 'rabbitsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://vetslovepets.com.au/cdn/shop/products/oxbow-harvest-stacks-western-timothy-hay_300x.jpg?v=1668439461',
+            title: "Western Timothy Hay ",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 14,
+        type: 'rabbitsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://vetslovepets.com.au/cdn/shop/files/OxbowCriticalCareAppleBanana450g_300x.webp?v=1705904010',
+            title: "Dry Apple & Banana ",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 15,
+        type: 'rabbitsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/stack-wooden-pellets-bio-energy-white-background-isolated_93675-130993.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
+            title: "Benny pellets ",
+            subtitle:"Pet Item",
+        },
+    },
+    //_________________________________________________________________________
+    {
+        id: 16,
+        type: 'parrotsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://arquivet.com/5943-home_default/kit-of-2-cagliari-cages-for-birds-accessories-included-465-x-36-x-77-cm.jpg',
+            title: "Parrot Cage",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 17,
+        type: 'parrotsFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://www.petbarn.com.au/media/catalog/product/1/5/15248_122943_1_n_avi-one-olympic-ring-with-bell-bird-toy_1.jpg?optimize=medium&fit=bounds&height=450&width=450&canvas=450:450',
+            title: "Parrot Ring Toy",
+            subtitle:"Pet Item",
+        },
+    },
+    //____________________________________________________________________________
+    {
+        id: 18,
+        type: 'hamsterFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/top-view-fresh-salad-leaves-table_23-2148495694.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
+            title: "Leafy Greens for Hamster",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 19,
+        type: 'hamsterFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.freepik.com/free-photo/four-fresh-cucumbers-white-table_114579-76144.jpg?uid=R71749232&ga=GA1.1.776039553.1739453855&semt=ais_hybrid',
+            title: "Cucumbers",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 20,
+        type: 'hamsterFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.kwcdn.com/product/fancy/351c6bf0-0668-4079-ad3b-8682d53a0f39.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp',
+            title: "Hamster Sand Baths",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 21,
+        type: 'hamsterFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://img.fruugo.com/product/5/29/1726367295_0340_0340.jpg',
+            title: "Hamster Exercise Ball",
+            subtitle:"Pet Item",
+        },
+    },
+    {
+        id: 22,
+        type: 'hamsterFood',
+        menu: {
+            cost: '$89',
+            sale: '$80',
+            photo: 'https://s.turbifycdn.com/aah/entirelypets/prevue-mesh-hamster-wheel-96.jpg',
+            title: "Hamster Whell",
             subtitle:"Pet Item",
         },
     },
