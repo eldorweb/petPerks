@@ -6,6 +6,7 @@ import Logo from "./logo"
 import Galery from "./galery"
 import PetFoods from "./petFoods"
 import PetLovers from "./petLovers"
+import Post from "./post"
 
 const HomeMain = () => {
     return (
@@ -17,6 +18,7 @@ const HomeMain = () => {
             <PetFoods />
             <Galery/>
             <PetLovers/>
+            <Post/>
         </StrictMode>
     )
 }

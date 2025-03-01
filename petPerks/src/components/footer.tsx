@@ -8,7 +8,7 @@ import card from '../assets/png/footer/card.png'
 
 const Footer = () => {
     return (
-    <FooterStyle className="footer">
+    <FooterStyle className="footer border-t-[1px]">
         <div className="bgimg">
         <div className="footerTop">
         <div className="footerFirst">
