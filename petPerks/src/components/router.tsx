@@ -11,6 +11,10 @@ import LoginMain from "../auth/login"
 import RegisterMain from "../auth/register"
 import Page404 from "../add/404page"
 import PetFoodsDetail from "./petFoodsDetail"
+import OrderTracking from "./orderTracking"
+import Favorites from "./favorites"
+import ShopCart from "./shopCart"
+import UnderConst from "../add/underConst"
 
 
 const Router = () => {
@@ -28,6 +32,10 @@ const Router = () => {
         <Route path='/login' element ={<LoginMain />} />
         <Route path='/register' element ={<RegisterMain />} />
         <Route path='*' element={<Page404/>} />
+        <Route path='/orderTracking' element={<OrderTracking/>} />
+        <Route path='/favorites' element={<Favorites/>} />
+        <Route path='/shopCarts' element={<ShopCart/>} />
+        <Route path='/underConst' element={<UnderConst/>} />
         </Routes>
         <Footer/>
 
