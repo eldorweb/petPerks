@@ -5,6 +5,7 @@ import dogMp4 from '../../../assets/dogGrooming.mp4'
 import bigStar from '../../../assets/svg/home/BigStar.svg'
 
 const DogBoard = () => {
+  
   return (
     <div className="flex gap-[30px]">
 
@@ -21,7 +22,7 @@ const DogBoard = () => {
 
       <div className="relative">
         <img src={dogGrooming} alt="" className='w-[410px] h-[272px] rounded-tr-[100px] mb-[30px]'/>
-        <video src={dogMp4} controls={true} loop={true} className='w-[410px] h-[219px] rounded-2xl shadow-2xl shadow-amber-800'></video>
+        <video src={dogMp4} controls={false}  loop={true} className='w-[410px] h-[219px] rounded-2xl shadow-2xl shadow-amber-800'></video>
         <img src={bigStar} alt="img" className='absolute top-[-50px] left-[20px]'/>
         <p className="w-4 absolute top-[-25px] left-[55px]">50% Sale</p>
       </div>

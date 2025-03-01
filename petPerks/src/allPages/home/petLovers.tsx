@@ -25,6 +25,7 @@ const PetLovers = () => {
                 <Carousel
                     showIndicators={false}
                     showStatus={false}
+                    showThumbs={false}
                     renderArrowPrev={(clickHandler) => {
                         return (
                             <div
@@ -88,7 +89,7 @@ const PetLovers = () => {
                         </div>
                     </div>
                 </Carousel>
-                <img src={friendship} alt="" className="w-[44%] absolute right-[100px] top-[-50px]" />
+                <img src={friendship} alt="" className="w-[42%] absolute right-[100px] top-[-50px]" />
             </div>
         </div>
     )

@@ -48,8 +48,8 @@ const Post = () => {
                         <button className="cursor-pointer font-[lufga500] text-[16px] text-[#000] uppercase px-[30px] py-[15px] rounded-[10px] border-[1px] border-[#000 bg-[#FFFBFA]]">Read more</button>
                         <div className="border-2 rounded-2xl p-1 ml-[-15px] z-10 bg-[#fff] cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3.33334 8H12.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.33334 8H12.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </div>
                     </div>
@@ -65,8 +65,8 @@ const Post = () => {
                         <button className="cursor-pointer font-[lufga500] text-[16px] text-[#000] uppercase px-[30px] py-[15px] rounded-[10px] border-[1px] border-[#000 bg-[#FFFBFA]]">Read more</button>
                         <div className="border-2 rounded-2xl p-1 ml-[-15px] z-10 bg-[#fff] cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3.33334 8H12.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.33334 8H12.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </div>
                     </div>
@@ -82,8 +82,8 @@ const Post = () => {
                         <button className="cursor-pointer font-[lufga500] text-[16px] text-[#000] uppercase px-[30px] py-[15px] rounded-[10px] border-[1px] border-[#000 bg-[#FFFBFA]]">Read more</button>
                         <div className="border-2 rounded-2xl p-1 ml-[-15px] z-10 bg-[#fff] cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3.33334 8H12.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.33334 8H12.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </div>
                     </div>
@@ -99,8 +99,8 @@ const Post = () => {
                         <button className="cursor-pointer font-[lufga500] text-[16px] text-[#000] uppercase px-[30px] py-[15px] rounded-[10px] border-[1px] border-[#000 bg-[#FFFBFA]]">Read more</button>
                         <div className="border-2 rounded-2xl p-1 ml-[-15px] z-10 bg-[#fff] cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3.33334 8H12.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.33334 8H12.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </div>
                     </div>
@@ -116,8 +116,8 @@ const Post = () => {
                         <button className="cursor-pointer font-[lufga500] text-[16px] text-[#000] uppercase px-[30px] py-[15px] rounded-[10px] border-[1px] border-[#000 bg-[#FFFBFA]]">Read more</button>
                         <div className="border-2 rounded-2xl p-1 ml-[-15px] z-10 bg-[#fff] cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3.33334 8H12.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.33334 8H12.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </div>
                     </div>
@@ -133,8 +133,8 @@ const Post = () => {
                         <button className="cursor-pointer font-[lufga500] text-[16px] text-[#000] uppercase px-[30px] py-[15px] rounded-[10px] border-[1px] border-[#000 bg-[#FFFBFA]]">Read more</button>
                         <div className="border-2 rounded-2xl p-1 ml-[-15px] z-10 bg-[#fff] cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3.33334 8H12.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.33334 8H12.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </div>
                     </div>
@@ -150,8 +150,8 @@ const Post = () => {
                         <button className="cursor-pointer font-[lufga500] text-[16px] text-[#000] uppercase px-[30px] py-[15px] rounded-[10px] border-[1px] border-[#000 bg-[#FFFBFA]]">Read more</button>
                         <div className="border-2 rounded-2xl p-1 ml-[-15px] z-10 bg-[#fff] cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3.33334 8H12.6667" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.33334 8H12.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M8 3.33398L12.6667 8.00065L8 12.6673" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </div>
                     </div>
