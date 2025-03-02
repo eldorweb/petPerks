@@ -91,6 +91,7 @@ body {
 }
 .heart_div:hover svg path{
   fill: red;
+  stroke: red;
 }
 .arrow.active{
   background: yellow;

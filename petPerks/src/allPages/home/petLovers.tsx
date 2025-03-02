@@ -8,10 +8,10 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 
 const PetLovers = () => {
-    let food = document.querySelectorAll('.arrow');
-    food.forEach((value) => {
+    let next = document.querySelectorAll('.arrow');
+    next.forEach((value) => {
         value.addEventListener('click', () => {
-            food.forEach(value => {
+            next.forEach(value => {
                 value.classList.remove('active')
             })
             value.classList.add('active')
@@ -29,20 +29,20 @@ const PetLovers = () => {
                     renderArrowPrev={(clickHandler) => {
                         return (
                             <div
-                                className='absolute bottom-0 right-[200px] flex justify-center items-center p-3 opacity-100 rounded-[50px] hover:opacity-70 cursor-pointer z-20'
+                                className='absolute arrow bottom-0 right-[200px] flex justify-center items-center p-3 opacity-100 rounded-[50px] hover:opacity-70 cursor-pointer z-20'
                                 onClick={clickHandler}
                             >
-                                <FaArrowCircleLeft className="w-9 h-9 text-red arrow active" />
+                                <FaArrowCircleLeft className="w-9 h-9 text-red arrow" />
                             </div>
                         );
                     }}
                     renderArrowNext={(clickHandler) => {
                         return (
                             <div
-                                className='absolute bottom-0 right-[150px] flex justify-center items-center p-3 opacity-100 hover:opacity-70 cursor-pointer z-20 rounded-[50%]'
+                                className='absolute bottom-0 right-[150px] arrow flex justify-center items-center p-3 opacity-100 hover:opacity-70 cursor-pointer z-20 rounded-[50%]'
                                 onClick={clickHandler}
                             >
-                                <FaArrowCircleRight className="w-9 h-9 text-red arrow" />
+                                <FaArrowCircleRight className="w-9 h-9 text-red arrow active" />
                             </div>
                         );
                     }}

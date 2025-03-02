@@ -68,6 +68,7 @@ align-items: center;
 }
 &.active svg path{
     fill: red;
+    stroke: red;
 }
 &:hover{
     color:rgba(255, 0, 0, 0.48);
