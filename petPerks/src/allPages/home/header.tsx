@@ -8,6 +8,7 @@ import user2 from '../../assets/png/home/user2.jpg'
 import user3 from '../../assets/png/home/user3.jpg'
 import user4 from '../../assets/png/home/user4.jpg'
 import headerImg from '../../assets/png/home/headerImg.png'
+import { NavLink } from "react-router"
 
 const HomeHeader = () => {
     return (
@@ -21,7 +22,7 @@ const HomeHeader = () => {
                             <a href="https://www.facebook.com/">Facebook</a>
                             <a href="https://x.com/">twitter</a>
                         </div>
-                        <div className="vertical2">Let’s talk</div>
+                        <NavLink to={'/contactUs'}><div className="vertical2">Let’s talk</div></NavLink>
                     </div>
 
 

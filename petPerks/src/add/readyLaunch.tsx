@@ -1,18 +1,84 @@
-import hunger from '../assets/png/hunger.svg'
-import under from '../assets/png/under.svg'
+import Logo from "../assets/svg/nav/logo.svg"
+import bone from '../assets/png/bone.svg'
+import { useEffect, useState } from "react"
+
+const ReadyLaunch = () => {
+    const [days, setDays] = useState(10)
+    const [hours, setHours] = useState(10)
+    const [minutes, setMinutes] = useState(10)
+    const [seconds, setSeconds] = useState(10)
 
 
-const UnderConst = () => {
+    useEffect(() => {
+        const countdown = () => {
+            const endDate = new Date("December 31, 2025 24:00:00").getTime()
+            const today = new Date().getTime()
+
+            const timeDiff = endDate - today
+
+            const seconds = 1000
+            const minutes = seconds * 60
+            const hours = minutes * 60
+            const days = hours * 24
+
+            let timeDays = Math.floor(timeDiff / days)
+            let timeHours = Math.floor((timeDiff % days) / hours)
+            let timeMinutes = Math.floor((timeDiff % hours) / minutes)
+            let timeSeconds = Math.floor((timeDiff % minutes) / seconds)
+
+            timeHours = timeHours < 10 ? "0" + timeHours : timeHours
+            timeMinutes = timeMinutes < 10 ? "0" + timeMinutes : timeMinutes
+            timeSeconds = timeSeconds < 10 ? "0" + timeSeconds : timeSeconds
+
+            setDays(timeDays)
+            setHours(timeHours)
+            setMinutes(timeMinutes)
+            setSeconds(timeSeconds)
+        }
+
+        setInterval(countdown, 1000)
+    }, [])
+
+
     return (
-        <div className="underConst h-[800px] mr-auto ml-auto w-[100%] flex flex-col justify-start items-center">
-            <img src={hunger} alt="hunger" className="ml-auto mr-auto" />
-            <img src={under} alt="hunger" className="ml-auto mr-auto mt-[-100px]" />
-            <h1 className="uppercase text-[#000] font-[lufga600] text-[84px] mt-[-50px]">construction</h1>
+        <div className="underConst h-[800px] mr-auto ml-auto w-[100%] flex flex-col justify-center items-center">
+            <div className="flex items-center">
+                <img src={Logo} alt="logo" className="mr-3 w-[42px]" />
+                <h4 className="text-[#000] font-[Jost] text-[30px] font-semibold capitalize">PetPerks</h4>
+            </div>
+            <h2 className="capitalize text-[#000] font-[lufga600] text-[65px] w-[50%] text-center">Our awesome new site is almost ready to launch!</h2>
+            <div className="relative">
+                <div className="mt-[-340px] mb-[-300px] relative -z-10">
+                    <img src={bone} alt="" className="" />
+                    <div className="absolute top-[43%] left-[20%] gap-[20px] flex">
+
+                        <div className="flex flex-col bg-[#fff] rounded-[15px] px-[32px] py-[12px] text-center">
+                            <span className="text-[#000] font-[lufga600] text-[60px]" id="days">{days}</span>
+                            <p className="uppercase text-[15px] font-[lufga500]">Days</p>
+                        </div>
+
+                        <div className="flex flex-col bg-[#fff] rounded-[15px] px-[32px] py-[12px] text-center">
+                            <span className="text-[#000] font-[lufga600] text-[60px]" id="hours">{hours}</span>
+                            <p className="uppercase text-[15px] font-[lufga500]">Hours</p>
+                        </div>
+
+                        <div className="flex flex-col bg-[#fff] rounded-[15px] px-[32px] py-[12px] text-center">
+                            <span className="text-[#000] font-[lufga600] text-[60px] " id="minutes">{minutes}</span>
+                            <p className="uppercase text-[15px] font-[lufga500]">Minutes</p>
+                        </div>
+
+                        <div className="flex flex-col bg-[#fff] rounded-[15px] px-[32px] py-[12px] text-center">
+                            <span className="text-[#000] font-[lufga600] text-[60px]" id="seconds">{seconds}</span>
+                            <p className="uppercase text-[15px] font-[lufga500]">Seconds</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <form className="flex mb-[20px]">
                 <input type="email" name="email" id="email" className='border-[1px] rounded-[10px] mr-[20px] pr-[100px] pl-[20px] py-[10px] placeholder:text-[15px] placeholder:text-[#000]' placeholder='Your Email Address' />
                 <input type="button" value="subscribe" className='rounded-[10px] border-[1px] px-[32px] py-[15.5px] text-[#000] font-[lufga500] text-[16px] hover:bg-[#000] hover:text-[#fff] capitalize' />
             </form>
-            <p className="text-[#000] font-[lufga500] text-[18px] mb-[20px]">This website is currently under constracrion</p>
             <div className="underSvg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="225" height="45" viewBox="0 0 225 45" fill="none">
                     <rect x="0.5" y="0.5" width="44" height="44" rx="22" fill="black" stroke="black" />
@@ -33,4 +99,4 @@ const UnderConst = () => {
     )
 }
 
-export default UnderConst
+export default ReadyLaunch

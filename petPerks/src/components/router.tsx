@@ -15,6 +15,8 @@ import OrderTracking from "./orderTracking"
 import Favorites from "./favorites"
 import ShopCart from "./shopCart"
 import UnderConst from "../add/underConst"
+import ReadyLaunch from "../add/readyLaunch"
+import ContactUs from "../auth/contactUs"
 
 
 const Router = () => {
@@ -36,6 +38,9 @@ const Router = () => {
         <Route path='/favorites' element={<Favorites/>} />
         <Route path='/shopCarts' element={<ShopCart/>} />
         <Route path='/underConst' element={<UnderConst/>} />
+        <Route path='/readyLaunch' element={<ReadyLaunch/>} />
+        <Route path='/contactUs' element={<ContactUs/>} />
+
         </Routes>
         <Footer/>
 
