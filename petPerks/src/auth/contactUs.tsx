@@ -65,6 +65,7 @@ const ContactUs = () => {
                         height: "660px",
                     }}
                     level={3} // 지도의 확대 레벨
+                    className="-z-10"
                 />
                 </>
     )

@@ -327,11 +327,11 @@ const ShopCart = () => {
                     </tbody>
                 </table>
                     <div className="flex justify-between items-center mt-[30px]">
-                        <form className="flex w-[420px] border-[1px] rounded-[10px] items-center justify-between py-[17.5px] px-[20px]">
+                        <form className="flex w-[420px] border-[1px] rounded-[10px] items-center justify-between py-[7.5px] px-[20px]">
                             <label htmlFor="form" className="font-[lufga400] text-[15px] text-[#000]">Coupon Code</label>
-                            <input type="text" className="text-end placeholder:font-[lufga500] placeholder:text-[15px]" placeholder="Apply Coupon"/>
+                            <input type="text" className="text-end placeholder:font-[lufga500] placeholder:text-[15px] p-[10px] outline-none" placeholder="Apply Coupon"/>
                         </form>
-                        <button className="text-[#fff] text-[16px] font-[lufga500] uppercase py-[15px] px-[35px] border-none rounded-[10px] bg-[#000]">Update Cart</button>
+                        <button className="text-[#fff] text-[16px] font-[lufga500] cursor-pointer uppercase py-[15px] px-[35px] border-none rounded-[10px] bg-[#000]">Update Cart</button>
                     </div>
                 </div>
 
