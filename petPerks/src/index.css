@@ -105,3 +105,12 @@ body {
 .underSvg:hover svg path{
   fill: red;
 }
+#minus.active{
+  display: flex;
+}
+#plus.active{
+  display: none;
+}
+#text.active{
+  display: flex;
+}

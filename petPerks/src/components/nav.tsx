@@ -37,8 +37,8 @@ const Nav = () => {
                         <path d="M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z" fill="black" fillOpacity="0.4" />
                     </svg>
                 </NavLink>
-                <NavLink to={'/pages'} className="nav_link">
-                    <div className="link">Pages</div>
+                <NavLink to={'/about'} className="nav_link">
+                    <div className="link">About</div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                         <path d="M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z" fill="black" fillOpacity="0.4" />
                     </svg>
