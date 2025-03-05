@@ -114,3 +114,10 @@ body {
 #text.active{
   display: flex;
 }
+.button.active{
+  color: red;
+}
+
+.hoverImg:hover .wrapper{
+  opacity: 1;
+}

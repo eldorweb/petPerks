@@ -5,7 +5,7 @@ const Favorites = () => {
         <div className="flex flex-col">
             <div className="relative">
                 <div className="py-[89px] h-[277px] bg-[url('https://images.unsplash.com/photo-1444212477490-ca407925329e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdhbGtpbmd3aXRoJTIwZG9nfGVufDB8fDB8fHww')] bg-center bg-cover bg-no-repeat text-center ">
-                    <div className="bg-linear-to-r/increasing from-[#544a7d90] py-[89px] to-[#ffd45280] w-[100%] -z-0 absolute top-0">
+                    <div className="bg-[#2D0B03CC] h-[100%] w-[100%] -z-0 absolute top-0 flex flex-col justify-center">
                     <h1 className="text-[#fff] font-[lufga600] text-[40px] mb-[16px]">Wishlist</h1>
                     <p className="text-[#fff] text-[16px] fonr-[lufga400]">Home   {'>'}  Wishlist</p>
                     </div>

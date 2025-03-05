@@ -6,7 +6,6 @@ import AboutMain from "../allPages/about/main"
 import ShopMain from "../allPages/shop/main"
 import BlogMain from "../allPages/blog/main"
 import PortfolioMain from "../allPages/portfolio/main"
-import PagesMain from "../allPages/pages/main"
 import LoginMain from "../auth/login"
 import RegisterMain from "../auth/register"
 import Page404 from "../add/404page"
@@ -17,6 +16,9 @@ import ShopCart from "./shopCart"
 import UnderConst from "../add/underConst"
 import ReadyLaunch from "../add/readyLaunch"
 import ContactUs from "../auth/contactUs"
+import Pagesmain from "../allPages/pages/main"
+import Faqs from "./faqs"
+import PricingTable from "./pricingTable"
 
 
 const Router = () => {
@@ -30,16 +32,18 @@ const Router = () => {
         <Route path='/shop' element ={<ShopMain />} />
         <Route path='/blog' element ={<BlogMain />} />
         <Route path='/portfolio' element ={<PortfolioMain />} />
-        <Route path='/pages' element ={<PagesMain />} />
+        <Route path='/pages' element ={<Pagesmain />} />
         <Route path='/login' element ={<LoginMain />} />
         <Route path='/register' element ={<RegisterMain />} />
         <Route path='*' element={<Page404/>} />
         <Route path='/orderTracking' element={<OrderTracking/>} />
         <Route path='/favorites' element={<Favorites/>} />
         <Route path='/shopCarts' element={<ShopCart/>} />
+        <Route path='/contactUs' element={<ContactUs/>} />
         <Route path='/underConst' element={<UnderConst/>} />
         <Route path='/readyLaunch' element={<ReadyLaunch/>} />
-        <Route path='/contactUs' element={<ContactUs/>} />
+        <Route path='/faqs' element={<Faqs/>} />
+        <Route path='/price' element={<PricingTable/>} />
 
         </Routes>
         <Footer/>

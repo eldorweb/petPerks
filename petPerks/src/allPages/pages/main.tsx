@@ -1,8 +1,9 @@
 
-const PagesMain = () => {
+
+const Pagesmain = () => {
     return (
-    <div>PagesMain</div>
+        <div>main</div>
     )
 }
 
-export default PagesMain
+export default Pagesmain
