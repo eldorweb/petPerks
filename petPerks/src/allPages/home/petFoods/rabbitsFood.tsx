@@ -9,7 +9,7 @@ const RabbitsFood = () => {
             {
                 rabbits.map((value) => {
                     return <div className='flex flex-col border-[1px] rounded-[30px] relative petfoods' >
-                        <Link key={value.id} to={`./petFood/${value.id}`} className="flex">
+                        <Link key={value.id} to={`./petFood/rabbitsfood/${value.id}`} className="flex">
                             <img src={value.menu.photo} className="rounded-t-[30px] h-[280px] w-[100%] object-fill object-center border-b-[1px] flex" alt='none' />
                         </Link>
                         <div className="heart_div absolute right-4 top-4 heart cursor-pointer">

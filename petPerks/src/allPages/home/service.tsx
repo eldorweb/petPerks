@@ -9,7 +9,7 @@ import Walking from "./serviceComp/walking";
 const Service = () => {
     const [select, setSelect] = useState("petGroomig")
     
-    const handleSelect = (value) => {
+    const handleSelect = (value: string) => {
         setSelect(value);
     }
 

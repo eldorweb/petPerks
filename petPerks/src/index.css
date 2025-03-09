@@ -41,8 +41,13 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
-
+::selection{
+  color: #fff;
+  background: #17A2B8;
+}
+input[type="text"]{
+  outline: none;
+}
 /* _____________________ */
 .footerFirst::before{
   content: '';
@@ -120,4 +125,10 @@ body {
 
 .hoverImg:hover .wrapper{
   opacity: 1;
+}
+.btnhover:hover svg path{
+  fill: #fff;
+}
+#menu-button:hover #dropdown{
+  display: flex;
 }

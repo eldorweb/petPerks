@@ -10,7 +10,7 @@ import HamsterFood from './petFoods/hamsterFood'
 const PetFoods = () => {
     const [select, setSelect] = useState("dogsFood")
 
-    const handleSelect = (value) => {
+    const handleSelect = (value: string) => {
         setSelect(value);
     }
 

@@ -93,7 +93,7 @@ export const FoodMocdata = [
 
     // _______________________________________________________________________________
     {
-        id: 9,
+        id: 1,
         type: 'catsFood',
         menu: {
             cost: '$89',
@@ -104,7 +104,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 10,
+        id: 2,
         type: 'catsFood',
         menu: {
             cost: '$89',
@@ -115,7 +115,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 11,
+        id: 3,
         type: 'catsFood',
         menu: {
             cost: '$89',
@@ -126,7 +126,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 12,
+        id: 4,
         type: 'catsFood',
         menu: {
             cost: '$89',
@@ -139,7 +139,7 @@ export const FoodMocdata = [
     //________________________________________________________________________________
 
     {
-        id: 13,
+        id: 1,
         type: 'rabbitsFood',
         menu: {
             cost: '$89',
@@ -150,7 +150,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 14,
+        id: 2,
         type: 'rabbitsFood',
         menu: {
             cost: '$89',
@@ -161,7 +161,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 15,
+        id: 3,
         type: 'rabbitsFood',
         menu: {
             cost: '$89',
@@ -173,7 +173,7 @@ export const FoodMocdata = [
     },
     //_________________________________________________________________________
     {
-        id: 16,
+        id: 1,
         type: 'parrotsFood',
         menu: {
             cost: '$89',
@@ -184,7 +184,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 17,
+        id: 2,
         type: 'parrotsFood',
         menu: {
             cost: '$89',
@@ -196,7 +196,7 @@ export const FoodMocdata = [
     },
     //____________________________________________________________________________
     {
-        id: 18,
+        id: 1,
         type: 'hamsterFood',
         menu: {
             cost: '$89',
@@ -207,7 +207,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 19,
+        id: 2,
         type: 'hamsterFood',
         menu: {
             cost: '$89',
@@ -218,7 +218,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 20,
+        id: 3,
         type: 'hamsterFood',
         menu: {
             cost: '$89',
@@ -229,7 +229,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 21,
+        id: 4,
         type: 'hamsterFood',
         menu: {
             cost: '$89',
@@ -240,7 +240,7 @@ export const FoodMocdata = [
         },
     },
     {
-        id: 22,
+        id: 5,
         type: 'hamsterFood',
         menu: {
             cost: '$89',
