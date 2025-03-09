@@ -16,7 +16,7 @@ import ShopCart from "./shopCart"
 import UnderConst from "../add/underConst"
 import ReadyLaunch from "../add/readyLaunch"
 import ContactUs from "../auth/contactUs"
-import Pagesmain from "../allPages/pages/main"
+import Pagesmain from "../allPages/shop/pages/main"
 import Faqs from "./faqs"
 import PricingTable from "./pricingTable"
 

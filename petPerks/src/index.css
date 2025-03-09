@@ -88,6 +88,9 @@ input[type="text"]{
 .petfoods:hover .hoverCart{
   opacity: 1;
 }
+.hoverWrapper:hover .hoverCart{
+  opacity: 1;
+}
 .petfoods:hover .hoverCart div{
   margin-bottom: 10px;
 }
