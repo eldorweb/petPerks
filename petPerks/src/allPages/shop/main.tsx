@@ -1,4 +1,3 @@
-import { FoodMocdata } from "../../mocData/FoodMocdata"
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import * as React from 'react';
@@ -51,11 +50,12 @@ const PrettoSlider = styled(Slider)({
 });
 const ShopMain = () => {
     const [value, setValue] = React.useState<number[]>([49, 346]);
-    const dogs = FoodMocdata.filter(value => value.type === 'dogsFood')
-    const cats = FoodMocdata.filter(value => value.type === 'catsFood')
     const handleChange = (event: Event, newValue: number | number[]) => {
         setValue(newValue as number[]);
     };
+    React.useEffect(()=>{
+        window.scrollTo(0, 0); 
+    },[])
     const [select, setSelect] = React.useState("shopPic")
     const handleSelect = (value: string) => {
         setSelect(value);

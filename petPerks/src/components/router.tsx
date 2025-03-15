@@ -8,8 +8,6 @@ import BlogMain from "../allPages/blog/main"
 import PortfolioMain from "../allPages/portfolio/main"
 import LoginMain from "../auth/login"
 import RegisterMain from "../auth/register"
-import Page404 from "../add/404page"
-import PetFoodsDetail from "./petFoodsDetail"
 import OrderTracking from "./orderTracking"
 import Favorites from "./favorites"
 import ShopCart from "./shopCart"
@@ -19,6 +17,9 @@ import ContactUs from "../auth/contactUs"
 import Pagesmain from "../allPages/shop/pages/main"
 import Faqs from "./faqs"
 import PricingTable from "./pricingTable"
+import ShopDetail from "../detail/shopDetail"
+import Page404 from "../add/404page"
+import BlogDetail from "../detail/blogDetail"
 
 
 const Router = () => {
@@ -27,10 +28,13 @@ const Router = () => {
         <Nav/>
         <Routes>
         <Route path='/' element ={<HomeMain />} />
-        <Route path='/petFood/:id' element ={<PetFoodsDetail />} />
+        <Route path='/shop/petFood/:id' element ={<ShopDetail />} />
+        <Route path='/shop/petFood/:id/petFood/:id' element ={<ShopDetail />} />
+        <Route path='/petFood/:id' element ={<ShopDetail />} />
         <Route path='/about' element ={<AboutMain />} />
         <Route path='/shop' element ={<ShopMain />} />
         <Route path='/blog' element ={<BlogMain />} />
+        <Route path='/blog/blogDetail' element ={<BlogDetail />} />
         <Route path='/portfolio' element ={<PortfolioMain />} />
         <Route path='/pages' element ={<Pagesmain />} />
         <Route path='/login' element ={<LoginMain />} />

@@ -9,6 +9,7 @@ import search from '../../assets/svg/about/search-normal.svg'
 import image1 from '../../assets/png/home/galery6.jpg'
 import image2 from '../../assets/png/home/galery7.jpg'
 import image3 from '../../assets/png/home/galery4.jpg'
+import { Link, NavLink } from 'react-router'
 
 const BlogMain = () => {
     return (
@@ -25,6 +26,7 @@ const BlogMain = () => {
                 <div className="mr-[55px] w-[100%]">
                     <div className="grid grid-cols-2 gap-x-[30px] gap-y-[50px] mb-[70px]">
                         {/*  */}
+                        <Link to={"/"}>
                         <div className="flex flex-col items-center relative hoverImg">
                             <img src={img1} alt="img1" className="w-[410px] h-[475px] object-cover object-top rounded-[20px] cursor-pointer" />
                             <div className="wrapper absolute bottom-[30px] flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -35,6 +37,7 @@ const BlogMain = () => {
                                 </a>
                             </div>
                         </div>
+                        </Link>
                         {/*  */}
 
                         {/*  */}

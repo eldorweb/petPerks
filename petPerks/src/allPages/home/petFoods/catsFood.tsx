@@ -10,7 +10,7 @@ const CatsFood = () => {
             {
                 cats.map((value) => {
                     return <div className='flex flex-col border-[1px] rounded-[30px] relative petfoods' >
-                        <Link key={value.id} to={`./petFood/catfood/${value.id}`} className="flex">
+                        <Link key={value.id} to={`/petFood/${value.id}`} className="flex">
                             <img src={value.menu.photo} className="rounded-t-[30px] h-[280px] w-[100%] object-fill object-center border-b-[1px] flex" alt='none' />
                         </Link>
                         <div className="heart_div absolute right-4 top-4 heart cursor-pointer">
@@ -37,7 +37,7 @@ const CatsFood = () => {
                                 </svg>
                             </div>
                         </div>
-                        <Link key={value.id} to={`./petFood/${value.id}`} className="cursor-pointer flex flex-col p-[19px]">
+                        <Link key={value.id} to={`/petFood/${value.id}`} className="cursor-pointer flex flex-col p-[19px]">
                             <h3 className="text-[15px] text-[#00000099] mb-1">{value.menu.subtitle || "none"}</h3>
                             <h2 className="text-[#000] font-[lufga500] text-[16px] mb-[18px]">{value.menu.title}</h2>
                             <div className="flex items-center justify-between">

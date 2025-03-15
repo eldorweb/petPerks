@@ -35,7 +35,7 @@ const DogsFood = () => {
                                 </svg>
                             </div>
                         </div>
-                        <Link key={value.id} to={`./petFood/dogsfood/${value.id}`} className="cursor-pointer flex flex-col pb-[19px]">
+                        <Link key={value.id} to={`./petFood/${value.id}`} className="cursor-pointer flex flex-col pb-[19px]">
                             <img src={value.menu.photo} className="rounded-t-[30px] h-[280px] w-[100%] object-fill object-center border-b-[1px] flex" alt='none' />
                             <div className="px-[19px] pt-[16px]">
                                 <h3 className="text-[15px] text-[#00000099] mb-1">{value.menu.subtitle || "none"}</h3>

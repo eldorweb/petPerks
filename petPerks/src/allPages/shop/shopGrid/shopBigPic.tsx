@@ -6,7 +6,7 @@ const ShopBigPic = () => {
     const dogs = FoodMocdata.filter(value => value.type === 'dogsFood')
     const cats = FoodMocdata.filter(value => value.type === 'catsFood')
     return (
-        <div className="grid grid-cols-2 gap-[50px] justify-between mx-auto pl-[100px] ml-[100px]">
+        <div className="grid grid-cols-2 gap-[50px] gap-x-[100px] justify-between mx-auto px-[200px]">
             {
                 dogs.map((value) => {
                     return <div className='flex flex-col border-[1px] rounded-[30px] relative petfoods' >
@@ -35,7 +35,7 @@ const ShopBigPic = () => {
                                 </svg>
                             </div>
                         </div>
-                        <Link key={value.id} to={`./petFood/dogsfood${value.id}`} className="cursor-pointer flex flex-col pb-[19px]">
+                        <Link key={value.id} to={`./petFood/${value.id}`} className="cursor-pointer flex flex-col pb-[19px]">
                             <img src={value.menu.photo} className="rounded-t-[30px] h-[280px] w-[100%] object-fill object-center border-b-[1px] flex" alt='none' />
                             <div className="px-[19px] pt-[16px]">
                                 <h3 className="text-[15px] text-[#00000099] mb-1">{value.menu.subtitle || "none"}</h3>
@@ -60,7 +60,7 @@ const ShopBigPic = () => {
             }
             {
                 cats.map((value) => {
-                    return <div className='flex flex-col border-[1px] rounded-[30px] relative petfoods' >
+                    return <div className='flex flex-col border-[1px] rounded-[30px] relative petfoods ' >
 
                         <div className="heart_div absolute right-4 top-4 heart cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000">
@@ -86,7 +86,7 @@ const ShopBigPic = () => {
                                 </svg>
                             </div>
                         </div>
-                        <Link key={value.id} to={`./petFood/catsfood/${value.id}`} className="cursor-pointer flex flex-col pb-[19px]">
+                        <Link key={value.id} to={`./petFood/${value.id}`} className="cursor-pointer flex flex-col pb-[19px]">
                             <img src={value.menu.photo} className="rounded-t-[30px] h-[280px] w-[100%] object-fill object-center border-b-[1px] flex" alt='none' />
                             <div className="px-[19px] pt-[16px]">
                                 <h3 className="text-[15px] text-[#00000099] mb-1">{value.menu.subtitle || "none"}</h3>

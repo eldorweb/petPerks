@@ -37,7 +37,7 @@ const ShopList = () => {
                                 </svg>
                             </div>
                         </div>
-                        <Link key={value.id} to={`./petFood/dogsfood${value.id}`} className="cursor-pointer flex">
+                        <Link key={value.id} to={`./petFood/${value.id}`} className="cursor-pointer flex">
                             <img src={value.menu.photo} className="border-[1px] rounded-[30px] h-[290px] w-[70%] object-fill object-center flex mr-[31px]" alt='none' />
                             <div className="py-[31px] w-[100%]">
                                 <div className="flex justify-between w-[100%] mb-[19px]">
