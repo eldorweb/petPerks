@@ -10,8 +10,12 @@ import image1 from '../../assets/png/home/galery6.jpg'
 import image2 from '../../assets/png/home/galery7.jpg'
 import image3 from '../../assets/png/home/galery4.jpg'
 import { Link, NavLink } from 'react-router'
+import { useEffect } from 'react'
 
 const BlogMain = () => {
+    useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
     return (
         <div className="">
             <div className="relative">

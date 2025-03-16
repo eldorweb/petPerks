@@ -14,11 +14,11 @@ const Galery = () => {
         <div className="flex p-[100px] gap-[30px] relative">
 
 
-            <div className="grid grid-flow-col grid-rows-2 gap-[30px]">
-                <img src={img1} alt="img" className="w-[300px] h-[340px] rounded-tl-[100px] object-center object-fill " />
-                <img src={img2} alt="img" className="w-[300px] h-[240px] rounded-tr-[100px] object-center object-cover size-[200px]" />
-                <img src={img3} alt="img" className="w-[300px] h-[340px] rounded-tr-[100px] object-center object-fill" />
-                <img src={img4} alt="img" className="w-[300px] h-[240px] rounded-bl-[100px] object-left object-fill" />
+            <div className="grid grid-flow-col grid-rows-2 gap-[30px] ">
+                <img src={img1} loading='lazy' alt="img" className="w-[300px] h-[340px] rounded-tl-[100px] object-center object-fill " />
+                <img src={img2} loading='lazy' alt="img" className="w-[300px] h-[240px] rounded-tr-[100px] object-center object-cover size-[200px]" />
+                <img src={img3} loading='lazy' alt="img" className="w-[300px] h-[340px] rounded-tr-[100px] object-center object-fill" />
+                <img src={img4} loading='lazy' alt="img" className="w-[300px] h-[240px] rounded-bl-[100px] object-left object-fill" />
             </div>
 
 

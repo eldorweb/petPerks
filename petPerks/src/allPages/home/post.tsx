@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import img1 from '../../assets/png/home/galery6.jpg'
+import { Link } from "react-router";
 
 
 const Post = () => {
@@ -28,7 +29,9 @@ const Post = () => {
         <div className="flex flex-col pb-[126px] relative">
             <div className="flex px-[315px] items-center justify-between mb-[20px]">
                 <h2 className="font-[lufga500] text-[55px] text-[#000] capitalize">Latest Post</h2>
+                <Link to={'/blog'}>
                 <button className="font-[lufga500] text-[16px] text-[#FFFBFA] px-[30px] py-[13px] cursor-pointer bg-[#000] rounded-[15px]">View All</button>
+                </Link>
             </div>
             <Carousel
                 responsive={responsive}

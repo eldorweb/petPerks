@@ -1,7 +1,45 @@
+import { useEffect, useState } from 'react';
 import loginImg from '../assets/png/home/zbigimg.png'
-
+import SkeletonCart from '../components/skeleton';
 
 const LoginMain = () => {
+    const [todos, setTodos] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null)
+    useEffect(()=>{
+        window.scrollTo(0, 0); 
+    },[])
+
+    useEffect(() => {
+        const fetchTodos = async () => {
+            // first it will try the function
+            try {
+                const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+                if (!response) {
+                    console.log("Broken URL");
+                    // it will throw error to error function
+                    throw new Error('Failed to fetching URL 404');
+                }
+                // the files is always designed by Json
+                const data = await response.json();
+                setTodos(data);
+                // when it catch the error
+            } catch (err) {
+                setError(err.message)
+                // for the loading part
+            } finally {
+                setLoading(false)
+            }
+        };
+        // we have to call it out(function)
+        setTimeout(fetchTodos, 3000);
+        
+    }, [4000]);
+    // loading part
+    if (loading) return <SkeletonCart/>
+    // ______________________________-
+    // printing error
+    if (error) return <p>Error: {error}</p>
     return (
 <div className="flex bg-linear-to-r from-#FFC7BB from-50% to-#FFEDE9 to-100%">
 

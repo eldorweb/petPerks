@@ -14,7 +14,6 @@ const OrderTracking = () => {
 
             </div>
 
-
             <div className="w-[50%] bg-[#FFEDE9] pt-[134px] px-[227px] pb-[128px]">
                 <div className="border-[1px] p-[80px] rounded-[30px] flex flex-col items-center justify-center">
                     <h3 className="text-[#000] font-[lufga600] text-[28px] mb-[5px]">Track Your Order</h3>

@@ -11,9 +11,14 @@ import logo5 from '../../assets/svg/Logo5.svg'
 import logo6 from '../../assets/svg/Logo6.svg'
 import logo7 from '../../assets/svg/Logo7.svg'
 import logo8 from '../../assets/svg/Logo8.svg'
+import { useState } from 'react'
 
 const AboutMain = () => {
-
+    const [toggled, setToggled] = useState(false)
+    const [toggled1, setToggled1] = useState(false)
+    const [toggled2, setToggled2] = useState(false)
+    const [toggled3, setToggled3] = useState(false)
+    const [toggled4, setToggled4] = useState(false)
 
 
     return (
@@ -32,97 +37,119 @@ const AboutMain = () => {
                         <img src={img1} alt="img" className="w-[409px] h-[261px] object-fill rounded-tl-[150px] mr-[30px]" />
                         <img src={img2} alt="img" className="w-[190px] h-[261px] object-fill rounded-t-[150px]" />
                     </div>
-                    <div className="flex flex-col justify-center">
+                    <div className="flex flex-col justify-center gap-[10px]">
                         {/*  */}
                         <div className="flex flex-col">
-                            <div className="flex items-center justify-between py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px]">
+                            <div className={`flex-col cursor-pointer  py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px] ${toggled ? "toggled" : " "}`} id='fn' onClick={() => setToggled(!toggled)}>
+                                <div className="flex items-center justify-between mb-[10px]">
                                 <p className="text-[#000] text-[18px]">How can I contact customer support?</p>
-                                <div className="flex" id='fn'>
-                                    <div className="items-center justify-center bg-[#000] rounded-[15px] hidden" id='minus'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                            <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                            <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                            <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </div>
+                                <div className={`flex `}  >
+                                        <div className={`items-center justify-center bg-[#000] rounded-[15px] hidden`} id='minus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
                                 </div>
-                            </div>
-                            <p className="py-[20px] hidden" id='text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis ratione quisquam labore quam sint, a quia ipsam. Natus distinctio doloremque cupiditate molestiae exercitationem, in porro inventore reiciendis praesentium, corrupti cum, quo iste velit esse culpa quos provident nulla veniam? Eaque itaque eveniet nemo a architecto perferendis dolor aspernatur quaerat odit corrupti similique provident quos repudiandae aperiam vitae error praesentium amet recusandae nostrum aut laudantium, magnam id sed rerum? Maiores iure praesentium deleniti dolores consequatur magni aliquid excepturi officia odio ab. Quaerat maiores veritatis rem, soluta, quas nisi temporibus porro eligendi, culpa ratione exercitationem inventore quod consequatur officia. Mollitia, fuga.</p>
-                        </div>
-                        {/*  */}
-                        {/*  */}
-                        <div className="flex items-center justify-between py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px]">
-                            <p className="text-[#000] text-[18px]">Can I cancel my order?</p>
-                            <div className="flex">
-                                <div className="flex items-center justify-center bg-[#000] rounded-[15px] hidden" id='minus'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                        <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
                                 </div>
-                                <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                        <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                </div>
+                                    <p className="py-[20px] border-[1px] rounded-2xl p-[20px] hidden" id='text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis ratione quisquam labore quam sint, a quia ipsam. Natus distinctio doloremque cupiditate molestiae exercitationem, in porro inventore reiciendis praesentium, corrupti cum, quo iste velit esse culpa quos provident nulla veniam? Eaque itaque eveniet nemo a architecto perferendis dolor aspernatur quaerat odit corrupti similique provident quos repudiandae aperiam vitae error praesentium amet recusandae nostrum aut laudantium, magnam id sed rerum? Maiores iure praesentium deleniti dolores consequatur magni aliquid excepturi officia odio ab. Quaerat maiores veritatis rem, soluta, quas nisi temporibus porro eligendi, culpa ratione exercitationem inventore quod consequatur officia. Mollitia, fuga.</p>
                             </div>
                         </div>
                         {/*  */}
                         {/*  */}
-                        <div className="flex items-center justify-between py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px]">
-                            <p className="text-[#000] text-[18px]">Do you offer international shipping?</p>
-                            <div className="flex">
-                                <div className="flex items-center justify-center bg-[#000] rounded-[15px] hidden" id='minus'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                        <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
+                        <div className="flex flex-col">
+                            <div className={`flex-col cursor-pointer  py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px] ${toggled1 ? "toggled" : " "}`} id='fn' onClick={() => setToggled1(!toggled1)}>
+                                <div className="flex items-center justify-between mb-[10px]">
+                                <p className="text-[#000] text-[18px]">How can I contact customer support?</p>
+                                <div className={`flex `}  >
+                                        <div className={`items-center justify-center bg-[#000] rounded-[15px] hidden`} id='minus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
                                 </div>
-                                <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                        <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
                                 </div>
+                                    <p className="py-[20px] border-[1px] rounded-2xl p-[20px] hidden" id='text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis ratione quisquam labore quam sint, a quia ipsam. Natus distinctio doloremque cupiditate molestiae exercitationem, in porro inventore reiciendis praesentium, corrupti cum, quo iste velit esse culpa quos provident nulla veniam? Eaque itaque eveniet nemo a architecto perferendis dolor aspernatur quaerat odit corrupti similique provident quos repudiandae aperiam vitae error praesentium amet recusandae nostrum aut laudantium, magnam id sed rerum? Maiores iure praesentium deleniti dolores consequatur magni aliquid excepturi officia odio ab. Quaerat maiores veritatis rem, soluta, quas nisi temporibus porro eligendi, culpa ratione exercitationem inventore quod consequatur officia. Mollitia, fuga.</p>
                             </div>
                         </div>
                         {/*  */}
                         {/*  */}
-                        <div className="flex items-center justify-between py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px]">
-                            <p className="text-[#000] text-[18px]">Can I track my order in real-time?</p>
-                            <div className="flex">
-                                <div className="flex items-center justify-center bg-[#000] rounded-[15px] hidden" id='minus'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                        <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
+                        <div className="flex flex-col">
+                            <div className={`flex-col cursor-pointer  py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px] ${toggled2? "toggled" : " "}`} id='fn' onClick={() => setToggled2(!toggled2)}>
+                                <div className="flex items-center justify-between mb-[10px]">
+                                <p className="text-[#000] text-[18px]">How can I contact customer support?</p>
+                                <div className={`flex `}  >
+                                        <div className={`items-center justify-center bg-[#000] rounded-[15px] hidden`} id='minus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
                                 </div>
-                                <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                        <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
                                 </div>
+                                    <p className="py-[20px] border-[1px] rounded-2xl p-[20px] hidden" id='text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis ratione quisquam labore quam sint, a quia ipsam. Natus distinctio doloremque cupiditate molestiae exercitationem, in porro inventore reiciendis praesentium, corrupti cum, quo iste velit esse culpa quos provident nulla veniam? Eaque itaque eveniet nemo a architecto perferendis dolor aspernatur quaerat odit corrupti similique provident quos repudiandae aperiam vitae error praesentium amet recusandae nostrum aut laudantium, magnam id sed rerum? Maiores iure praesentium deleniti dolores consequatur magni aliquid excepturi officia odio ab. Quaerat maiores veritatis rem, soluta, quas nisi temporibus porro eligendi, culpa ratione exercitationem inventore quod consequatur officia. Mollitia, fuga.</p>
                             </div>
                         </div>
                         {/*  */}
                         {/*  */}
-                        <div className="flex items-center justify-between py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px]">
-                            <p className="text-[#000] text-[18px]">How do I know if a product is in stock?</p>
-                            <div className="flex">
-                                <div className="flex items-center justify-center bg-[#000] rounded-[15px] hidden" id='minus'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                        <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
+                        <div className="flex flex-col">
+                            <div className={`flex-col cursor-pointer  py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px] ${toggled3 ? "toggled" : " "}`} id='fn' onClick={() => setToggled3(!toggled3)}>
+                                <div className="flex items-center justify-between mb-[10px]">
+                                <p className="text-[#000] text-[18px]">How can I contact customer support?</p>
+                                <div className={`flex `}  >
+                                        <div className={`items-center justify-center bg-[#000] rounded-[15px] hidden`} id='minus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
                                 </div>
-                                <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                                        <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
                                 </div>
+                                    <p className="py-[20px] border-[1px] rounded-2xl p-[20px] hidden" id='text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis ratione quisquam labore quam sint, a quia ipsam. Natus distinctio doloremque cupiditate molestiae exercitationem, in porro inventore reiciendis praesentium, corrupti cum, quo iste velit esse culpa quos provident nulla veniam? Eaque itaque eveniet nemo a architecto perferendis dolor aspernatur quaerat odit corrupti similique provident quos repudiandae aperiam vitae error praesentium amet recusandae nostrum aut laudantium, magnam id sed rerum? Maiores iure praesentium deleniti dolores consequatur magni aliquid excepturi officia odio ab. Quaerat maiores veritatis rem, soluta, quas nisi temporibus porro eligendi, culpa ratione exercitationem inventore quod consequatur officia. Mollitia, fuga.</p>
+                            </div>
+                        </div>
+                        {/*  */}
+                        {/*  */}
+                        <div className="flex flex-col">
+                            <div className={`flex-col cursor-pointer  py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px] ${toggled4 ? "toggled" : " "}`} id='fn' onClick={() => setToggled4(!toggled4)}>
+                                <div className="flex items-center justify-between mb-[10px]">
+                                <p className="text-[#000] text-[18px]">How can I contact customer support?</p>
+                                <div className={`flex `}  >
+                                        <div className={`items-center justify-center bg-[#000] rounded-[15px] hidden`} id='minus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div className="flex items-center justify-center bg-[#000] rounded-[15px]" id='plus'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M9.5 4.25V14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M4.25 9.5H14.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                </div>
+                                </div>
+                                    <p className="py-[20px] border-[1px] rounded-2xl p-[20px] hidden" id='text'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis ratione quisquam labore quam sint, a quia ipsam. Natus distinctio doloremque cupiditate molestiae exercitationem, in porro inventore reiciendis praesentium, corrupti cum, quo iste velit esse culpa quos provident nulla veniam? Eaque itaque eveniet nemo a architecto perferendis dolor aspernatur quaerat odit corrupti similique provident quos repudiandae aperiam vitae error praesentium amet recusandae nostrum aut laudantium, magnam id sed rerum? Maiores iure praesentium deleniti dolores consequatur magni aliquid excepturi officia odio ab. Quaerat maiores veritatis rem, soluta, quas nisi temporibus porro eligendi, culpa ratione exercitationem inventore quod consequatur officia. Mollitia, fuga.</p>
                             </div>
                         </div>
                         {/*  */}
@@ -153,11 +180,11 @@ const AboutMain = () => {
                     <img src={person2} alt="img" className="w-[631px] h-[567px] rounded-tr-[150px] object-cover" />
                 </div>
             </div>
-            <PetLovers/>
+            <PetLovers />
             <div className="flex mr-auto ml-auto px-[314px] py-[90px]">
                 <div className="mr-[20px]">
                     <h3 className="text-[28px] font-[lufga500] w-[45%] mb-[15px]">
-                    We’re just keep growing with 6.3k trusted companies
+                        We’re just keep growing with 6.3k trusted companies
                     </h3>
                     <p className='w-[80%] text-[#000] text-[16px]'>Nullam nec ipsum luctus, vehicula massa in, dictum sapien. Aenean quis luctus ert nulla quam augue.</p>
                 </div>

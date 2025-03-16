@@ -8,6 +8,7 @@ import chamster from '../../assets/png/home/Chamsters.png'
 import { CategoryStyle } from "../../style/homeStyle";
 import { FiChevronLeft } from "react-icons/fi";
 import { BiChevronRight } from "react-icons/bi";
+import { Link } from "react-router";
 
 
 const Category = () => {
@@ -35,9 +36,9 @@ const Category = () => {
         return (
             <div className="carousel-button-group relative mb-4 right-[30px] bottom-[260px] gap-4 flex justify-end 
             items-center w-full ">
-                <button className='block rounded-[20px]  p-3 bg-slate-300' onClick={() =>
+                <button className='block rounded-[20px]  p-3 bg-slate-300 cursor-pointer hover:bg-[red] hover:border-[#000]' onClick={() =>
                     previous()}> <FiChevronLeft /></button>
-                <button onClick={() => next()}><span className='rounded-[20px] block p-3 bg-slate-300' ><BiChevronRight /></span></button>
+                <button onClick={() => next()}><span className='rounded-[20px] block p-3 bg-slate-300 cursor-pointer hover:border-[#000] hover:bg-[red]' ><BiChevronRight /></span></button>
             </div>
 
         );
@@ -47,7 +48,7 @@ const Category = () => {
             <h2>Find product Category</h2>
             <Carousel
                 responsive={responsive}
-                autoPlay={true} 
+                autoPlay={true}
                 autoPlaySpeed={3000}
                 keyBoardControl={true}
                 className="carousel"
@@ -56,34 +57,48 @@ const Category = () => {
                 renderButtonGroupOutside={true}
                 customButtonGroup={<ButtonGroup />}
             >
-                <div className="d1">
-                    <p>Dogs</p>
-                    <img src={cdog} draggable={false} alt="dogs" />
-                </div>
-                <div className="d2">
-                    <p>Cats</p>
-                    <img src={ccat} draggable={false} alt="dogs" />
-                </div>
-                <div className="d3">
-                    <p>Rabbits</p>
-                    <img src={crabbits} draggable={false} alt="dogs" />
-                </div>
-                <div className="d4">
-                    <p>Parrot</p>
-                    <img src={cparrot} draggable={false} alt="dogs" />
-                </div>
-                <div className="d5">
-                    <p>Hamster</p>
-                    <img src={chamster} draggable={false} alt="dogs" />
-                </div>
-                <div className="d1">
-                    <p>Dogs</p>
-                    <img src={cdog} draggable={false} alt="dogs" />
-                </div>
-                <div className="d2">
-                    <p>Cats</p>
-                    <img src={ccat} draggable={false} alt="dogs" />
-                </div>
+                <Link to={'/dogfood'}>
+                    <div className="d1">
+                        <p>Dogs</p>
+                        <img src={cdog} draggable={false} alt="dogs" />
+                    </div>
+                </Link>
+                <Link to={'/catfood'}>
+                    <div className="d2">
+                        <p>Cats</p>
+                        <img src={ccat} draggable={false} alt="dogs" />
+                    </div>
+                </Link>
+                <Link to={'/rabbitfood'}>
+                    <div className="d3">
+                        <p>Rabbits</p>
+                        <img src={crabbits} draggable={false} alt="dogs" />
+                    </div>
+                </Link>
+                <Link to={'/parrotfood'}>
+                    <div className="d4">
+                        <p>Parrot</p>
+                        <img src={cparrot} draggable={false} alt="dogs" />
+                    </div>
+                </Link>
+                <Link to={'/hamsterfood'}>
+                    <div className="d5">
+                        <p>Hamster</p>
+                        <img src={chamster} draggable={false} alt="dogs" />
+                    </div>
+                </Link>
+                <Link to={'/dogfood'}>
+                    <div className="d1">
+                        <p>Dogs</p>
+                        <img src={cdog} draggable={false} alt="dogs" />
+                    </div>
+                </Link>
+                <Link to={'/catfood'}>
+                    <div className="d2">
+                        <p>Cats</p>
+                        <img src={ccat} draggable={false} alt="dogs" />
+                    </div>
+                </Link>
             </Carousel>
         </CategoryStyle>
     )

@@ -113,13 +113,13 @@ input[type="text"]{
 .underSvg:hover svg path{
   fill: red;
 }
-#minus.active{
+#fn.toggled #minus{
   display: flex;
 }
-#plus.active{
+#fn.toggled #plus{
   display: none;
 }
-#text.active{
+#fn.toggled #text{
   display: flex;
 }
 .button.active{
@@ -137,4 +137,9 @@ input[type="text"]{
 }
 .hoverB:hover svg path{
 fill: #fff;
+}
+
+.toggle-btn.toggled svg path{
+  fill: red;
+  stroke: red;
 }

@@ -8,7 +8,10 @@ import user2 from '../../assets/png/home/user2.jpg'
 import user3 from '../../assets/png/home/user3.jpg'
 import user4 from '../../assets/png/home/user4.jpg'
 import headerImg from '../../assets/png/home/headerImg.png'
-import { NavLink } from "react-router"
+import { Link, NavLink } from "react-router"
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 
 const HomeHeader = () => {
     return (
@@ -28,10 +31,12 @@ const HomeHeader = () => {
 
                     <div className="header_right">
                         <div className="right_1">
-                            <h1>We Give Preference <br />
+                            <h1>We Give Preference<br />
                                 To Your Pets</h1>
                             <p>No code need. Plus free shippng on <span>$99+</span> orders!</p>
-                            <button>Adopt A Pet <img src={paw} alt="paw" /></button>
+                            <Link to={'/faqs'}>
+                            <button className="cursor-pointer">Adopt A Pet <img src={paw} alt="paw" /></button>
+                            </Link>
                             <div className="wrapper">
                                 <img className="img1" src={yellowDog} alt="dog" width='160px' />
                                 <div className="owners">

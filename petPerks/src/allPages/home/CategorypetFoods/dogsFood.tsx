@@ -1,23 +1,24 @@
 import { Link } from "react-router"
 import { FoodMocdata } from "../../../mocData/FoodMocdata"
-import { useState } from "react"
+import { useEffect } from "react"
 
 
-const DogsFood = () => {
+const CatDogsFood = () => {
     const dogs = FoodMocdata.filter(value => value.type === 'dogsFood')
-    const [toggled, setToggled] = useState(false)
-
+    useEffect(()=>{
+        window.scrollTo(0, 0); 
+    },[])
     return (
-        <div className="">
+        <div className="p-[100px]">
             <div className="grid grid-cols-4 gap-[30px]">
                 {
                     dogs.map((value) => {
                         return <div className='flex flex-col border-[1px] rounded-[30px] relative petfoods' >
 
-                            <div className={`heart_div absolute right-4 top-4 heart cursor-pointer toggle-btn ${toggled ? "toggled" : " "}`} onClick={() => setToggled(!toggled)}>
-                            <svg className="heart" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M17.3667 3.84124C16.9411 3.41541 16.4357 3.07761 15.8795 2.84714C15.3233 2.61667 14.7271 2.49805 14.1251 2.49805C13.523 2.49805 12.9268 2.61667 12.3706 2.84714C11.8144 3.07761 11.309 3.41541 10.8834 3.84124L10.0001 4.72457L9.11672 3.84124C8.25698 2.98149 7.09092 2.49849 5.87506 2.49849C4.6592 2.49849 3.49313 2.98149 2.63339 3.84124C1.77365 4.70098 1.29065 5.86704 1.29065 7.0829C1.29065 8.29876 1.77365 9.46483 2.63339 10.3246L3.51672 11.2079L10.0001 17.6912L16.4834 11.2079L17.3667 10.3246C17.7926 9.89894 18.1303 9.39358 18.3608 8.83736C18.5913 8.28115 18.7099 7.68497 18.7099 7.0829C18.7099 6.48083 18.5913 5.88465 18.3608 5.32844C18.1303 4.77222 17.7926 4.26686 17.3667 3.84124Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                            <div className="heart_div absolute right-4 top-4 heart cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M13.5998 6.65891L13.0426 7.19766C12.4621 7.75891 11.5415 7.75996 10.9597 7.19996L10.3972 6.65851C9.6401 5.92586 8.61275 5.50996 7.5363 5.50996C6.45985 5.50996 5.4325 5.92586 4.67535 6.65851L4.66132 6.67191C4.29192 7.02021 3.99982 7.43631 3.80092 7.89436C3.60205 8.35231 3.5 8.84376 3.5 9.33951C3.5 9.83526 3.60205 10.3267 3.80092 10.7847C3.99982 11.2427 4.29192 11.6588 4.66132 12.0071L4.67251 12.0177L10.9598 18.0694C11.5406 18.6285 12.4594 18.6285 13.0402 18.0694L19.3275 12.0177L19.3387 12.0071C19.7081 11.6588 20.0002 11.2427 20.1991 10.7847C20.3979 10.3267 20.5 9.83526 20.5 9.33951C20.5 8.84376 20.3979 8.35231 20.1991 7.89436C20.0002 7.43631 19.7081 7.02021 19.3387 6.67191L19.3248 6.65866C18.5672 5.92576 17.5394 5.50976 16.4624 5.50976C15.3855 5.50976 14.3574 5.92601 13.5998 6.65891ZM3.63229 5.58056C3.11613 6.06721 2.70552 6.65096 2.42504 7.29686C2.14457 7.94281 2 8.63751 2 9.33951C2 10.0415 2.14457 10.7362 2.42504 11.3821C2.70552 12.028 3.11613 12.6118 3.63229 13.0985L9.91955 19.1501C11.0812 20.2682 12.9188 20.2682 14.0804 19.1502L20.3677 13.0985C20.8838 12.6118 21.2945 12.028 21.5749 11.3821C21.8554 10.7362 22 10.0415 22 9.33951C22 8.63751 21.8554 7.94281 21.5749 7.29686C21.2945 6.65096 20.8838 6.06721 20.3677 5.58056C19.3273 4.57409 17.9243 4.00977 16.4624 4.00977C15.0006 4.00977 13.5976 4.57409 12.5572 5.58056L12 6.11931L11.4403 5.58056C10.4003 4.57424 8.99775 4.00998 7.5363 4.00998C6.0749 4.00998 4.67227 4.57424 3.63229 5.58056Z" fill="#000" />
+                                </svg>
                             </div>
                             <div className="hoverCart flex-col absolute top-4 left-4  items-center justify-center opacity-0">
                                 <div className="rounded-[12px] bg-[#FFEDE9] p-[5px]">
@@ -66,4 +67,4 @@ const DogsFood = () => {
     )
 }
 
-export default DogsFood
+export default CatDogsFood
