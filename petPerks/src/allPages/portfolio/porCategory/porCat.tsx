@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import img1 from '../../../assets/png/home/galery1.jpg'
 import img2 from '../../../assets/png/home/galery3.jpg'
 import img3 from '../../../assets/png/home/galery5.jpg'
@@ -9,6 +10,7 @@ const PorCat = () => {
         <div className='flex flex-col'>
             <div className="grid grid-cols-3 mx-auto px-[315px] border-t-[1px] border-t-[#0000001A] pt-[55px] pb-[50px] gap-[30px]">
                 {/*  */}
+                <Link to={"/blog/blogDetail/1"}>
                 <div className="flex flex-col items-center relative hoverImg">
                     <img src={img5} alt="img1" className="w-[410px] h-[410px] object-cover object-top rounded-[20px] cursor-pointer" />
                     <div className="wrapper absolute bottom-[30px] opacity-0 flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -16,8 +18,10 @@ const PorCat = () => {
                         <div className=" text-[#fff] font-[lufga500] text-[20px]">Pet Paloza: Where Every Pet is the Star Pet Happiness</div>
                     </div>
                 </div>
+                </Link>
                 {/*  */}
                 {/*  */}
+                <Link to={"/blog/blogDetail/2"}>
                 <div className="flex flex-col items-center relative hoverImg">
                     <img src={img1} alt="img1" className="w-[410px] h-[410px] object-cover object-top rounded-[20px] cursor-pointer" />
                     <div className="wrapper absolute bottom-[30px] opacity-0 flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -25,9 +29,11 @@ const PorCat = () => {
                         <div className=" text-[#fff] font-[lufga500] text-[20px]">Pet Paloza: Where Every Pet is the Star Pet Happiness</div>
                     </div>
                 </div>
+                </Link>
                 {/*  */}
 
                 {/*  */}
+                <Link to={"/blog/blogDetail/3"}>
                 <div className="flex flex-col items-center relative hoverImg">
                     <img src={img3} alt="img1" className="w-[410px] h-[410px] object-cover object-top rounded-[20px] cursor-pointer" />
                     <div className="wrapper absolute bottom-[30px] opacity-0 flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -35,9 +41,11 @@ const PorCat = () => {
                         <div className=" text-[#fff] font-[lufga500] text-[20px]">Pet Paloza: Where Every Pet is the Star Pet Happiness</div>
                     </div>
                 </div>
+                </Link>
                 {/*  */}
 
                 {/*  */}
+                <Link to={"/blog/blogDetail/4"}>
                 <div className="flex flex-col items-center relative hoverImg">
                     <img src={img2} alt="img1" className="w-[410px] h-[410px] object-cover object-top rounded-[20px] cursor-pointer" />
                     <div className="wrapper absolute bottom-[30px] opacity-0 flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -45,9 +53,11 @@ const PorCat = () => {
                         <div className=" text-[#fff] font-[lufga500] text-[20px]">Pet Paloza: Where Every Pet is the Star Pet Happiness</div>
                     </div>
                 </div>
+                </Link>
                 {/*  */}
                 
                 {/*  */}
+                <Link to={"/blog/blogDetail/5"}>
                 <div className="flex flex-col items-center relative hoverImg">
                     <img src={img4} alt="img1" className="w-[410px] h-[410px] object-cover rounded-[20px] cursor-pointer" />
                     <div className="wrapper absolute bottom-[30px] opacity-0 flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -55,6 +65,7 @@ const PorCat = () => {
                         <div className=" text-[#fff] font-[lufga500] text-[20px]">Pet Paloza: Where Every Pet is the Star Pet Happiness</div>
                     </div>
                 </div>
+                </Link>
                 {/*  */}
 
             </div>

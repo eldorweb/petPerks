@@ -6,7 +6,7 @@ const Faqs = () => {
             <div className="relative">
                 <div className="py-[89px] bg-[#2D0B03CC] text-center flex flex-col items-center">
                     <h1 className="text-[#fff] font-[lufga600] text-[40px] mb-[16px]">How can we help you?</h1>
-                    <p className="text-[#fff] text-[16px] fonr-[lufga400] mb-[36px]">Home   {'>'}  Faq’s</p>
+                    <p className="text-[#fff] text-[16px] fonr-[lufga400] mb-[36px]">Home   {'>'}  Faqs</p>
                     <div className="relative">
                         <form action="for" className="flex after:content-['🔍'] after:absolute after:right-[20px] after:top-[15px]">
                             <input type="text" className="border-[1px] text-[#fff] outline-0 border-[#fff] rounded-[20px] py-[13px] pl-[23px] pr-[200px] placeholder:text-[#fff] placeholder:text-[15px] " placeholder="Search Product" />

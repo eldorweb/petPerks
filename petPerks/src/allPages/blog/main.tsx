@@ -9,7 +9,7 @@ import search from '../../assets/svg/about/search-normal.svg'
 import image1 from '../../assets/png/home/galery6.jpg'
 import image2 from '../../assets/png/home/galery7.jpg'
 import image3 from '../../assets/png/home/galery4.jpg'
-import { Link, NavLink } from 'react-router'
+import { Link } from 'react-router'
 import { useEffect } from 'react'
 
 const BlogMain = () => {
@@ -30,7 +30,7 @@ const BlogMain = () => {
                 <div className="mr-[55px] w-[100%]">
                     <div className="grid grid-cols-2 gap-x-[30px] gap-y-[50px] mb-[70px]">
                         {/*  */}
-                        <Link to={"/"}>
+                        <Link to={"/blog/blogDetail/1"}>
                         <div className="flex flex-col items-center relative hoverImg">
                             <img src={img1} alt="img1" className="w-[410px] h-[475px] object-cover object-top rounded-[20px] cursor-pointer" />
                             <div className="wrapper absolute bottom-[30px] flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -45,6 +45,7 @@ const BlogMain = () => {
                         {/*  */}
 
                         {/*  */}
+                        <Link to={"/blog/blogDetail/2"}>
                         <div className="flex flex-col items-center relative hoverImg">
                             <img src={img2} alt="img1" className="w-[410px] h-[475px] object-cover object-top rounded-[20px] cursor-pointer" />
                             <div className="wrapper absolute bottom-[30px] flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -55,9 +56,11 @@ const BlogMain = () => {
                                 </a>
                             </div>
                         </div>
+                        </Link>
                         {/*  */}
 
                         {/*  */}
+                        <Link to={"/blog/blogDetail/3"}>
                         <div className="flex flex-col items-center relative hoverImg">
                             <img src={img3} alt="img1" className="w-[410px] h-[475px] object-cover object-top rounded-[20px] cursor-pointer" />
                             <div className="wrapper absolute bottom-[30px] flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -68,9 +71,11 @@ const BlogMain = () => {
                                 </a>
                             </div>
                         </div>
+                        </Link>
                         {/*  */}
 
                         {/*  */}
+                        <Link to={"/blog/blogDetail/4"}>
                         <div className="flex flex-col items-center relative hoverImg">
                             <img src={img4} alt="img1" className="w-[410px] h-[475px] object-cover object-top rounded-[20px] cursor-pointer" />
                             <div className="wrapper absolute bottom-[30px] flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -81,9 +86,11 @@ const BlogMain = () => {
                                 </a>
                             </div>
                         </div>
+                        </Link>
                         {/*  */}
 
                         {/*  */}
+                        <Link to={"/blog/blogDetail/5"}>
                         <div className="flex flex-col items-center relative hoverImg">
                             <img src={img5} alt="img1" className="w-[410px] h-[475px] object-cover object-top rounded-[20px] cursor-pointer" />
                             <div className="wrapper absolute bottom-[30px] flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -94,9 +101,11 @@ const BlogMain = () => {
                                 </a>
                             </div>
                         </div>
+                        </Link>
                         {/*  */}
 
                         {/*  */}
+                        <Link to={"/blog/blogDetail/6"}>
                         <div className="flex flex-col items-center relative hoverImg">
                             <img src={img6} alt="img1" className="w-[410px] h-[475px] object-cover object-top rounded-[20px] cursor-pointer" />
                             <div className="wrapper absolute bottom-[30px] flex flex-col justify-center bg-[#00000099] backdrop-blur-[12.5px] w-[90%] py-[23px] pl-[30px] pr-[63px] rounded-[10px]">
@@ -107,6 +116,7 @@ const BlogMain = () => {
                                 </a>
                             </div>
                         </div>
+                        </Link>
                         {/*  */}
                     </div>
                     <div className="flex items-center justify-center pb-[40px]"><button className="bg-[#000] text-[#fff] py-[13px] px-[30px] rounded-[10px] cursor-pointer hover:opacity-[0.8] text-[16px] font-[lufga500] flex items-center"><img src={spinner} alt="spinner" className='mr-[10px]' />Loadmore....</button></div>

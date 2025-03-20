@@ -21,7 +21,6 @@ import ShopDetail from "../detail/shopDetail"
 import Page404 from "../add/404page"
 import BlogDetail from "../detail/blogDetail"
 import ContactUs from "../auth/contactUs"
-import DogsFood from "../allPages/home/petFoods/dogsFood"
 import CatDogsFood from "../allPages/home/CategorypetFoods/dogsFood"
 import CatCatsFood from "../allPages/home/CategorypetFoods/catsFood"
 import CatRabbitsFood from "../allPages/home/CategorypetFoods/rabbitsFood"
@@ -43,7 +42,7 @@ const Router = () => {
         <Route path='/shop' element ={<ShopMain />} />
         <Route path='/blog' element ={<BlogMain />} />
         <Route path='/blog/blogDetail/:id' element ={<BlogDetail />} />
-        <Route path='/portfolio' element ={<PortfolioMain />} />
+        <Route path='/portfolio' element ={<PortfolioMain />} /> 
         <Route path='/pages' element ={<Pagesmain />} />
         <Route path='/login' element ={<LoginMain />} />
         <Route path='/register' element ={<RegisterMain />} />

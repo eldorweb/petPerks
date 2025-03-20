@@ -55,7 +55,7 @@ const Footer = () => {
 
         <div className="footerThird">
             <h2>Our Stores</h2>
-            <ul>
+            <ul className="flex flex-col">
                 <li>New York</li>
                 <li>London SF</li>
                 <li>Edinburg</li>
@@ -68,7 +68,7 @@ const Footer = () => {
 
         <div className="footerThird">
             <h2>Useful Links</h2>
-            <ul>
+            <ul className="flex flex-col">
                 <li>Privacy Policy</li>
                 <li>Returns</li>
                 <li>Terms & Conditions</li>
@@ -81,7 +81,7 @@ const Footer = () => {
 
         <div className="footerThird last">
             <h2>Footer Menu</h2>
-            <ul>
+            <ul className="flex flex-col">
                 <li>Instagram profile</li>
                 <li>New Collection</li>
                 <li>Woman Dress</li>

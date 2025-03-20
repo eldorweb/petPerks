@@ -9,7 +9,7 @@ import PorRab from "./porCategory/porRab"
 const PortfolioMain = () => {
     const [select, setSelect] = useState("porAll")
 
-    const handleSelect = (category) => {
+    const handleSelect = (category:string) => {
         setSelect(category);
     }
     let buttons = document.querySelectorAll('.button');
