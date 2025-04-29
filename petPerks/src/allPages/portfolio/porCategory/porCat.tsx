@@ -4,9 +4,25 @@ import img2 from '../../../assets/png/home/galery3.jpg'
 import img3 from '../../../assets/png/home/galery5.jpg'
 import img4 from '../../../assets/png/home/galery8.jpg'
 import img5 from '../../../assets/png/home/galery9.jpg'
+import { useEffect, useState } from 'react'
+import Loader from '../../../components/loader'
 
 const PorCat = () => {
-    return (
+    const [isLoading, setIsLoading] = useState(true);
+        useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
+    
+        useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        return (
+        isLoading ? <Loader /> :
         <div className='flex flex-col'>
             <div className="grid grid-cols-3 mx-auto px-[315px] border-t-[1px] border-t-[#0000001A] pt-[55px] pb-[50px] gap-[30px]">
                 {/*  */}

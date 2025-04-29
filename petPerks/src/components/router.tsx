@@ -8,7 +8,6 @@ import BlogMain from "../allPages/blog/main"
 import PortfolioMain from "../allPages/portfolio/main"
 import LoginMain from "../auth/login"
 import RegisterMain from "../auth/register"
-import OrderTracking from "./orderTracking"
 import Favorites from "./favorites"
 import ShopCart from "./shopCart"
 import UnderConst from "../add/underConst"
@@ -29,11 +28,11 @@ import CatParrotsFood from "../allPages/home/CategorypetFoods/parrotsFood"
 
 
 const Router = () => {
-    return (
+        return (
         <div style={{maxWidth:"1920px", marginInline:"auto"}}>
         <Nav/>
         <Routes>
-        <Route path='/' element ={<HomeMain />} />
+        <Route path='/home' element ={<HomeMain />} />
         <Route path='/shop/petFood/:id' element ={<ShopDetail />} />
         <Route path='/petFood/:id/petFood/:id' element ={<ShopDetail />} />
         <Route path='/shop/petFood/:id/petFood/:id' element ={<ShopDetail />} />
@@ -44,6 +43,7 @@ const Router = () => {
         <Route path='/blog/blogDetail/:id' element ={<BlogDetail />} />
         <Route path='/portfolio' element ={<PortfolioMain />} /> 
         <Route path='/pages' element ={<Pagesmain />} />
+        <Route path='/' element ={<LoginMain />} />
         <Route path='/login' element ={<LoginMain />} />
         <Route path='/register' element ={<RegisterMain />} />
         <Route path='*' element={<Page404/>} />

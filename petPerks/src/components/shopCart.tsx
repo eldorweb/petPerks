@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import dogChew from '../assets/png/home/cart/dogCewToys.jpg'
 import petBed from '../assets/png/home/foods/dogBed.png'
 import petBelt from '../assets/png/home/foods/dogBelt.png'
@@ -6,6 +6,7 @@ import petCloth from '../assets/png/home/foods/dogCloth.png'
 import petToy from '../assets/png/home/foods/dogToy.png'
 import plane from '../assets/svg/home/air-plane.svg'
 import box from '../assets/svg/home/box-tick.svg'
+import Loader from "./loader";
 
 const ShopCart = () => {
     const [count1, setCount1] = useState(0);
@@ -76,8 +77,21 @@ const ShopCart = () => {
         }
     }
 
+const [isLoading, setIsLoading] = useState(true);
+    useEffect(()=>{
+        window.scrollTo(0, 0); 
+    },[])
 
+    useEffect(() => {
+        const fakeDataFetch = () => {
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 1000);
+        }
+        fakeDataFetch();
+    }, [])
     return (
+        isLoading ? <Loader /> :
         <div className="flex flex-col text-center">
             <div className="py-[89px] bg-[#2D0B03CC]">
                 <h1 className="text-[#fff] font-[lufga600] text-[40px] mb-[16px]">Cart</h1>

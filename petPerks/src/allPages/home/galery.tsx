@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import img1 from '../../assets/png/home/galery1.jpg'
 import img2 from '../../assets/png/home/galery2.jpg'
 import img3 from '../../assets/png/home/galery3.jpg'
@@ -8,9 +9,24 @@ import img7 from '../../assets/png/home/galery7.jpg'
 import img8 from '../../assets/png/home/galery8.jpg'
 import img9 from '../../assets/png/home/galery9.jpg'
 import add from '../../assets/svg/home/add.svg'
+import Loader from '../../components/loader'
 
 const Galery = () => {
-    return (
+    const [isLoading, setIsLoading] = useState(true);
+        useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
+    
+        useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        return (
+        isLoading ? <Loader /> :
         <div className="flex p-[100px] gap-[30px] relative">
 
 

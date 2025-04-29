@@ -9,12 +9,27 @@ import user3 from '../../assets/png/home/user3.jpg'
 import user4 from '../../assets/png/home/user4.jpg'
 import headerImg from '../../assets/png/home/headerImg.png'
 import { Link, NavLink } from "react-router"
-import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import { useEffect, useState } from "react"
+import Loader from "../../components/loader"
 
 
 const HomeHeader = () => {
-    return (
+    const [isLoading, setIsLoading] = useState(true);
+        useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
+    
+        useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        return (
+        isLoading ? <Loader /> :
         <HomeStyle>
             <div className="header">
 

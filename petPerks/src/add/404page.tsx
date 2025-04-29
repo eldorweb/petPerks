@@ -1,9 +1,25 @@
 
 import styled from 'styled-components'
 import page from './404page.svg'
+import { useEffect, useState } from 'react';
+import Loader from '../components/loader';
 
 const Page404 = () => {
-    return (
+    const [isLoading, setIsLoading] = useState(true);
+        useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
+    
+        useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        return (
+        isLoading ? <Loader /> :
         <Page404STyle>
             <img src={page} alt="page404" />
         </Page404STyle>

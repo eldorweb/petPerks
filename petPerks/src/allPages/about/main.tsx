@@ -11,7 +11,8 @@ import logo5 from '../../assets/svg/Logo5.svg'
 import logo6 from '../../assets/svg/Logo6.svg'
 import logo7 from '../../assets/svg/Logo7.svg'
 import logo8 from '../../assets/svg/Logo8.svg'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import Loader from '../../components/loader'
 
 const AboutMain = () => {
     const [toggled, setToggled] = useState(false)
@@ -19,10 +20,24 @@ const AboutMain = () => {
     const [toggled2, setToggled2] = useState(false)
     const [toggled3, setToggled3] = useState(false)
     const [toggled4, setToggled4] = useState(false)
-
-
-    return (
-        <div className="mr-auto ml-auto">
+    const [isLoading, setIsLoading] = useState(true);
+        useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
+    
+        useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        
+        
+        return (
+        isLoading ? <Loader /> :
+        <div className="mr-auto ml-auto" >
             <div className="relative">
                 <div className="py-[89px] h-[277px] bg-[url('https://images.unsplash.com/photo-1444212477490-ca407925329e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdhbGtpbmd3aXRoJTIwZG9nfGVufDB8fDB8fHww')] bg-center bg-cover bg-no-repeat text-center ">
                     <div className=" py-[89px] bg-[#2D0B03CC] w-[100%] -z-0 absolute top-0">
@@ -37,7 +52,7 @@ const AboutMain = () => {
                         <img src={img1} alt="img" className="w-[409px] h-[261px] object-fill rounded-tl-[150px] mr-[30px]" />
                         <img src={img2} alt="img" className="w-[190px] h-[261px] object-fill rounded-t-[150px]" />
                     </div>
-                    <div className="flex flex-col justify-center gap-[10px]">
+                    <div className="flex flex-col justify-center gap-[10px]" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
                         {/*  */}
                         <div className="flex flex-col">
                             <div className={`flex-col cursor-pointer  py-[18.5px] px-[23.5px] border-[1px] rounded-[10px] mb-[20px] ${toggled ? "toggled" : " "}`} id='fn' onClick={() => setToggled(!toggled)}>

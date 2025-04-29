@@ -10,13 +10,25 @@ import image1 from '../../assets/png/home/galery6.jpg'
 import image2 from '../../assets/png/home/galery7.jpg'
 import image3 from '../../assets/png/home/galery4.jpg'
 import { Link } from 'react-router'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import Loader from '../../components/loader'
 
 const BlogMain = () => {
-    useEffect(()=>{
+    const [isLoading, setIsLoading] = useState(true);
+        useEffect(()=>{
             window.scrollTo(0, 0); 
         },[])
-    return (
+    
+        useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        return (
+        isLoading ? <Loader /> :
         <div className="">
             <div className="relative">
                 <div className="py-[89px] h-[277px] bg-[url('https://images.unsplash.com/photo-1444212477490-ca407925329e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdhbGtpbmd3aXRoJTIwZG9nfGVufDB8fDB8fHww')] bg-center bg-cover bg-no-repeat text-center ">

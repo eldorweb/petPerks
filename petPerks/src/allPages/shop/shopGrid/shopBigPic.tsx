@@ -5,7 +5,7 @@ import { FoodMocdata } from "../../../mocData/FoodMocdata"
 const ShopBigPic = () => {
     const dogs = FoodMocdata.filter(value => value.type === 'dogsFood')
     const cats = FoodMocdata.filter(value => value.type === 'catsFood')
-    return (
+        return (
         <div className="grid grid-cols-2 gap-[50px] gap-x-[100px] justify-between mx-auto px-[200px]">
             {
                 dogs.map((value) => {

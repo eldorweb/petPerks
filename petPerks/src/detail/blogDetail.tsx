@@ -1,16 +1,27 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BlogMocdata } from "../mocData/blogMocdata"
-import { useNavigate, useParams } from "react-router";
+import {  useParams } from "react-router";
 import user from '../assets/png/home/user1.jpg'
+import Loader from "../components/loader";
 
 const BlogDetail = () => {
     let { id } = useParams();
-    let navigate = useNavigate();
     const data = BlogMocdata.find((value) => value.id === Number(id));
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
-    return (
+    const [isLoading, setIsLoading] = useState(true);
+        useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
+    
+        useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        return (
+        isLoading ? <Loader /> :
         <div>
             <div className="flex flex-col justify-center pt-[47px] pb-[100px] bg-[#FFEDE9]">
                 <h1 className="text-[#000] text-[40px] font-[lufga500] text-center mb-[15px]">{data?.blog.title}</h1>

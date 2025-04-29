@@ -1,7 +1,23 @@
+import { useEffect, useState } from "react";
+import Loader from "./loader";
 
 
 const Faqs = () => {
-    return (
+    const [isLoading, setIsLoading] = useState(true);
+        useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
+    
+        useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        return (
+        isLoading ? <Loader /> :
         <div className="mr-auto ml-auto">
             <div className="relative">
                 <div className="py-[89px] bg-[#2D0B03CC] text-center flex flex-col items-center">

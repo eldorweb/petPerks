@@ -1,11 +1,26 @@
 import { Link } from "react-router"
 import { FoodMocdata } from "../../../mocData/FoodMocdata"
+import { useEffect, useState } from "react";
+import Loader from "../../../components/loader";
 
 
 const ParrotsFood = () => {
     const parrots = FoodMocdata.filter(value => value.type === 'parrotsFood')
+    const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
+    useEffect(() => {
+        const fakeDataFetch = () => {
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 1000);
+        }
+        fakeDataFetch();
+    }, [])
     return (
+        isLoading ? <Loader /> :
         <div className="grid grid-cols-4 gap-[30px]">
             {
                 parrots.map((value) => {

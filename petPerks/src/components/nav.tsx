@@ -54,14 +54,15 @@ const Nav = () => {
     const handleClose = () => setOpen(false);
 
     const dogs = FoodMocdata.filter(value => value.type === 'dogsFood')
-    const [toggled, setToggled] = useState(false)
 
     return (
         <NavStyle>
-            <div className="logo_div">
-                <img src={logo} alt="logo" className="logo" />
-                <h2 className="logo_title">PetPerks</h2>
-            </div>
+            <a href="/" className="cursor-pointer">
+                <div className="logo_div">
+                    <img src={logo} alt="logo" className="logo cursor-pointer" />
+                    <h2 className="logo_title">PetPerks</h2>
+                </div>
+            </a>
 
             <div className="nav_div">
                 <NavLink to={'/'} className="nav_link">

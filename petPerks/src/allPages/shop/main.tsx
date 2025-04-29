@@ -5,6 +5,7 @@ import styled from "styled-components";
 import ShopPic from "./shopGrid/shopPic";
 import ShopBigPic from "./shopGrid/shopBigPic";
 import ShopList from "./shopGrid/shopList";
+import Loader from '../../components/loader';
 
 function valuetext(value: number) {
     return `${value}°C`;
@@ -60,7 +61,21 @@ const ShopMain = () => {
     const handleSelect = (value: string) => {
         setSelect(value);
     }
-    return (
+    const [isLoading, setIsLoading] = React.useState(true);
+        React.useEffect(()=>{
+            window.scrollTo(0, 0); 
+        },[])
+    
+        React.useEffect(() => {
+            const fakeDataFetch = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000);
+            }
+            fakeDataFetch();
+        }, [])
+        return (
+        isLoading ? <Loader /> :
         <div className="mx-auto">
             <div className="relative">
                 <div className="py-[89px] h-[277px] bg-[url('https://images.unsplash.com/photo-1444212477490-ca407925329e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdhbGtpbmd3aXRoJTIwZG9nfGVufDB8fDB8fHww')] bg-center bg-cover bg-no-repeat text-center ">
