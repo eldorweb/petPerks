@@ -3,9 +3,11 @@ import logo from '../assets/svg/nav/logo.svg'
 import burger from '../assets/svg/nav/navBurger.svg';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FoodMocdata } from "../mocData/FoodMocdata";
 import { Link } from "react-router";
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 
 const style = {
@@ -55,9 +57,22 @@ const Nav = () => {
 
     const dogs = FoodMocdata.filter(value => value.type === 'dogsFood')
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true,
+        });
+
+        AOS.refresh();
+
+        return () => {
+            AOS.refreshHard();
+        };
+    }, []);
     return (
-        <NavStyle>
-            <a href="/" className="cursor-pointer">
+        <NavStyle data-aos="slide-down">
+            <a href="/home" className="cursor-pointer">
                 <div className="logo_div">
                     <img src={logo} alt="logo" className="logo cursor-pointer" />
                     <h2 className="logo_title">PetPerks</h2>
@@ -65,7 +80,7 @@ const Nav = () => {
             </a>
 
             <div className="nav_div">
-                <NavLink to={'/'} className="nav_link">
+                <NavLink to={'/home'} className="nav_link">
                     <div className="link">Home</div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                         <path d="M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z" fill="black" fillOpacity="0.4" />

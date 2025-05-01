@@ -23,6 +23,7 @@ const HomeMain = () => {
         }
         fakeDataFetch();
     }, [])
+    
     return (
         isLoading ? <Loader /> :
         <StrictMode >

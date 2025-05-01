@@ -12,6 +12,8 @@ import { Link, NavLink } from "react-router"
 import 'react-loading-skeleton/dist/skeleton.css'
 import { useEffect, useState } from "react"
 import Loader from "../../components/loader"
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 
 const HomeHeader = () => {
@@ -28,13 +30,27 @@ const HomeHeader = () => {
             }
             fakeDataFetch();
         }, [])
+        
+            useEffect(() => {
+                AOS.init({
+                    duration: 1000,
+                    once: false,
+                    mirror: true,
+                });
+        
+                AOS.refresh();
+        
+                return () => {
+                    AOS.refreshHard();
+                };
+            }, []);
         return (
         isLoading ? <Loader /> :
         <HomeStyle>
             <div className="header">
 
-                <div className="forBgimg">
-                    <div className="header_left">
+                <div className="forBgimg"  >
+                    <div className="header_left" data-aos="fade-right">
                         <div className="vertical1">
                             <a href="https://www.instagram.com/">Instagram</a>
                             <a href="https://www.facebook.com/">Facebook</a>
@@ -44,7 +60,7 @@ const HomeHeader = () => {
                     </div>
 
 
-                    <div className="header_right">
+                    <div className="header_right" data-aos="fade-right">
                         <div className="right_1">
                             <h1>We Give Preference<br />
                                 To Your Pets</h1>
@@ -67,7 +83,7 @@ const HomeHeader = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="right_2">
+                        <div className="right_2" data-aos="fade-left">
                             <img src={headerImg} alt="" />
                         </div>
 
