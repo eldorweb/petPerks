@@ -8,7 +8,7 @@ import logoipsum7 from '../../assets/svg/home/logoipsum7.svg'
 
 const Logo = () => {
     return (
-        <div className="flex py-[64px] px-[106px] bg-[#FFFBFA] items-center justify-between">
+        <div className="flex flex-wrap py-[64px] px-[106px] bg-[#FFFBFA] items-center justify-between">
             <a href=""><img src={logoipsum1} alt="logo" /></a>
             <a href=""><img src={logoipsum2} alt="logo" /></a>
             <a href=""><img src={logoipsum3} alt="logo" /></a>

@@ -3,26 +3,10 @@ import paw from '../../../assets/svg/home/paws.svg'
 import dogGrooming from '../../../assets/png/home/dogGrooming.jpg'
 import dogMp4 from '../../../assets/dogGrooming.mp4'
 import bigStar from '../../../assets/svg/home/BigStar.svg'
-import { useEffect, useState } from 'react'
-import Loader from '../../../components/loader'
 
 
 const PetGroomig = () => {
-  const [isLoading, setIsLoading] = useState(true);
-      useEffect(()=>{
-          window.scrollTo(0, 0); 
-      },[])
-  
-      useEffect(() => {
-          const fakeDataFetch = () => {
-              setTimeout(() => {
-                  setIsLoading(false);
-              }, 1000);
-          }
-          fakeDataFetch();
-      }, [])
       return (
-    isLoading ? <Loader /> :
     <div className="flex gap-[30px]">
 
       <div className="py-[44px] px-[36px] w-[50%] border-1 border-[#000] rounded-[20px]">

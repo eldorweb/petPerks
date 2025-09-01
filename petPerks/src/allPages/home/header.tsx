@@ -10,27 +10,12 @@ import user4 from '../../assets/png/home/user4.jpg'
 import headerImg from '../../assets/png/home/headerImg.png'
 import { Link, NavLink } from "react-router"
 import 'react-loading-skeleton/dist/skeleton.css'
-import { useEffect, useState } from "react"
-import Loader from "../../components/loader"
+import { useEffect} from "react"
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
 
 const HomeHeader = () => {
-    const [isLoading, setIsLoading] = useState(true);
-        useEffect(()=>{
-            window.scrollTo(0, 0); 
-        },[])
-    
-        useEffect(() => {
-            const fakeDataFetch = () => {
-                setTimeout(() => {
-                    setIsLoading(false);
-                }, 1000);
-            }
-            fakeDataFetch();
-        }, [])
-        
             useEffect(() => {
                 AOS.init({
                     duration: 1000,
@@ -45,7 +30,6 @@ const HomeHeader = () => {
                 };
             }, []);
         return (
-        isLoading ? <Loader /> :
         <HomeStyle>
             <div className="header">
 

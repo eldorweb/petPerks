@@ -9,8 +9,8 @@ import { CategoryStyle } from "../../style/homeStyle";
 import { FiChevronLeft } from "react-icons/fi";
 import { BiChevronRight } from "react-icons/bi";
 import { Link } from "react-router";
-import { useEffect, useState } from "react";
-import Loader from "../../components/loader";
+
+
 
 
 const Category = () => {
@@ -45,21 +45,8 @@ const Category = () => {
 
         );
     };
-    const [isLoading, setIsLoading] = useState(true);
-        useEffect(()=>{
-            window.scrollTo(0, 0); 
-        },[])
-    
-        useEffect(() => {
-            const fakeDataFetch = () => {
-                setTimeout(() => {
-                    setIsLoading(false);
-                }, 1000);
-            }
-            fakeDataFetch();
-        }, [])
+
         return (
-        isLoading ? <Loader /> :
         <CategoryStyle>
             <h2>Find product Category</h2>
             <Carousel

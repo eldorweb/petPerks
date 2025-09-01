@@ -1,4 +1,4 @@
-import { StrictMode, useEffect, useState } from "react"
+import { StrictMode } from "react"
 import HomeHeader from "./header"
 import Category from "./category"
 import Service from "./service"
@@ -7,25 +7,22 @@ import Galery from "./galery"
 import PetFoods from "./petFoods"
 import PetLovers from "./petLovers"
 import Post from "./post"
-import Loader from "../../components/loader"
+// import Loader from "../../components/loader"
 
 const HomeMain = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    useEffect(()=>{
-        window.scrollTo(0, 0); 
-    },[])
+    // const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        const fakeDataFetch = () => {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 1000);
-        }
-        fakeDataFetch();
-    }, [])
+    // useEffect(() => {
+    //     const fakeDataFetch = () => {
+    //         setTimeout(() => {
+    //             setIsLoading(false);
+    //         }, 1);
+    //     }
+    //     fakeDataFetch();
+    // }, [])
     
     return (
-        isLoading ? <Loader /> :
+        // isLoading ? <Loader /> :
         <StrictMode >
             <HomeHeader/>
             <Category />
